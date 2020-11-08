@@ -1,0 +1,3 @@
+- Jekyll color code categories: How to implement reusable color code categories en Jekyll.
+  - https://ginopalazzo.github.io/web/jekyll-color-code-categories.html
+- Note: split the footer into 2 sections
