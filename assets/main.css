@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:wght@400;700;800&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -6,11 +6,8 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
+h1, h2, h3, h4,
+p, ul, ol, li {
   font-family: "Lora", serif;
 }
 
@@ -19,17 +16,16 @@ a {
   color: rgb(61, 146, 201);
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: underline;
 }
 
 h1 {
   font-weight: 800;
+  text-align: center;
 }
 
-h2,
-h3 {
+h2, h3 {
   font-weight: 700;
 }
 
@@ -39,6 +35,15 @@ nav {
 
 img {
   max-width: 200px;
+}
+
+hr {
+  color: #ddd;
+}
+
+footer {
+  text-align: center;
+  font-size: 26px;
 }
 
 /* LAYOUT CSS */
@@ -66,10 +71,11 @@ img {
 }
 
 .brand-photo {
+  margin: 10px 0;
   max-width: 250px;
 }
 
-.brand-title,
+.brand-title, 
 .brand-tagline {
   margin: auto -20px;
 }
@@ -86,6 +92,7 @@ img {
 .brand-tagline {
   font-weight: 300;
   color: #ddd;
+  font-size: 18px;
 }
 
 .nav-list {
@@ -118,7 +125,7 @@ img {
 
 .content-subhead {
   text-transform: uppercase;
-  color: #aaa;
+  color: #333;
   border-bottom: 1px solid #eee;
   padding: 0.4em 0;
   font-size: 18px;
@@ -135,6 +142,12 @@ img {
   padding-bottom: 2em;
 }
 
+.post-body p,
+.post-body li {
+  font-size: 16px;
+  text-align: justify;
+}
+
 .post-title {
   font-size: 2em;
   color: #222;
@@ -148,15 +161,19 @@ img {
 }
 
 .post-description {
-  font-family: Georgia, "Cambria", serif;
-  color: #444;
+  color: black;
   line-height: 1.8em;
 }
 
 .post-meta {
-  color: #999;
+  color: #444;
   font-size: 90%;
   margin: 0;
+}
+
+.post-meta a {
+  font-weight: bold;
+  color: #376a8c;
 }
 
 .post-category {
@@ -165,22 +182,6 @@ img {
   color: #fff;
   background: #999;
   font-size: 80%;
-}
-
-.post-category-design {
-  background: #5aba59;
-}
-
-.post-category-pure {
-  background: #4d85d1;
-}
-
-.post-category-yui {
-  background: #8156a7;
-}
-
-.post-category-js {
-  background: #df2d4f;
 }
 
 .post-images {
@@ -192,20 +193,6 @@ img {
   margin-left: 1em;
   color: #fff;
   text-shadow: 0 1px 1px #333;
-}
-
-.footer {
-  padding: 1em 0;
-}
-
-.footer a {
-  color: #ccc;
-  font-size: 80%;
-}
-
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-  background: none;
 }
 
 /* RESPONSIVE CSS */
@@ -221,17 +208,22 @@ img {
     text-align: right;
   }
 
+  .brand-title,
+  .brand-tagline {
+    text-align: right;
+  }
+
   .sidebar {
     position: fixed;
     height: 100vh;
   }
-
-  .footer {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 48em) {
+  .pure-menu-link {
+    padding: 0 10px;
+  }
+
   .md-display {
     display: none;
   }
@@ -241,24 +233,39 @@ img {
     margin: 0;
     padding: 0 10px;
   }
+
+  .post-hr {
+    display: none;
+  }
 }
 
 /* JEKYLL CSS */
 
-.jekyll-header h1 {
+.jekyll-header {
   text-align: center;
   text-decoration: underline;
   font-size: 48px;
   margin-bottom: 0px;
+  color: #222;
+}
+
+.jekyll-header:hover {
+  color: #6f1f91;
 }
 
 .content {
   padding-top: 0;
 }
 
-#pages {
+.paginate {
+  font-size: 20px;
   text-align: center;
   margin-top: 20px;
+  font-weight: bold;
+}
+
+.paginate * {
+  font-family: "Open Sans", sans-serif!important;
 }
 
 #current-page {
@@ -266,11 +273,6 @@ img {
 }
 
 /* NAVIGATION */
-
-.main-site-subheader {
-  border-bottom: 1px solid #f7f7f7;
-  padding-left: 15px;
-}
 
 .menu {
   margin: 20px auto;
@@ -280,9 +282,9 @@ img {
 .menu a {
   font-size: 18px;
   font-weight: 600;
-  padding: 3px 10px;
+  padding: 7px 10px;
   border-right: 1px grey solid;
-  margin-left: -5px;
+  margin-left: -4px;
   text-decoration: none;
   color: #333;
   margin-top: 10px;

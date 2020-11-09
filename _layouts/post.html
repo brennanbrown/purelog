@@ -2,14 +2,16 @@
 layout: default
 ---
 
+<hr class="post-hr"/>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header>
-        <h2 itemprop="name headline">{{ page.title | escape }}</h2>
+        <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
         {%- include post-data.html -%}
     </header>
 
-    <div itemprop="articleBody">
+    <div class="post-body itemprop="articleBody">
         {{ content }}
     </div>
 

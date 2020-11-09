@@ -10,7 +10,7 @@ layout: default
 {% endif %}
 
 <div class="posts">
-    <h1 class="content-subhead">Recent Posts</h1>
+    <h2 class="content-subhead">Recent Posts</h2>
 
     {%- if posts.size > 0 -%}
         {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
@@ -49,29 +49,29 @@ layout: default
 <br />
 
 {% if site.paginate %}
-    <div class="pure-menu pure-menu-horizontal">
+    <div class="pure-menu pure-menu-horizontal paginate">
         <ul>
 
             {%- if paginator.previous_page %}
             <li class="pure-menu-item">
                 <a href="{{ paginator.previous_page_path | relative_url }}">
-                    < Previous</a> 
-            {%- else %} 
-                <strong>#</strong>
+                    < Previous</a>
             </li>
+            {%- else %} 
+            <li class="pure-menu-item">#</li>
             {%- endif %}
 
-            <li class="pure-menu-item">
-                <strong id="current-page">Page {{ paginator.page }}</strong></a>
+            <li class="pure-menu-item" id="current-page">
+                Page {{ paginator.page }}
             </li>
 
             {%- if paginator.next_page %}
             <li class="pure-menu-item">
                 <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next ></a>
-            {%- else %}
-                <strong>#</strong>
-            {%- endif %}
             </li>
+            {%- else %}
+            <li class="pure-menu-item">#</li>
+            {%- endif %}
             
         </ul>
     </div>
