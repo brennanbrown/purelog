@@ -4,20 +4,17 @@ layout: default
 {{ content }}
 
 {% if site.paginate %}
-{% assign posts = paginator.posts %}
+    {% assign posts = paginator.posts %}
 {% else %}
-{% assign posts = site.posts %}
+    {% assign posts = site.posts %}
 {% endif %}
-
-<div class="md-display">
-    <h1>Welcome to {{site.title}} </h1>
-</div>
 
 <div class="posts">
     <h1 class="content-subhead">Recent Posts</h1>
 
     {%- if posts.size > 0 -%}
-    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+
     {%- for post in posts -%}
     <section class="post">
         <header class="post-header">
@@ -52,25 +49,31 @@ layout: default
 <br />
 
 {% if site.paginate %}
-<div id="pages">
-    {%- if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">
-        < Previous</a> {%- else %} <strong>#</strong>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul>
+
+            {%- if paginator.previous_page %}
+            <li class="pure-menu-item">
+                <a href="{{ paginator.previous_page_path | relative_url }}">
+                    < Previous</a> 
+            {%- else %} 
+                <strong>#</strong>
+            </li>
             {%- endif %}
 
-            <strong id="current-page">
-                Page
-                {{ paginator.page }}
-            </strong>
+            <li class="pure-menu-item">
+                <strong id="current-page">Page {{ paginator.page }}</strong></a>
+            </li>
 
             {%- if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next ></a>
+            <li class="pure-menu-item">
+                <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next ></a>
             {%- else %}
-
-            <strong>#</strong>
-
+                <strong>#</strong>
             {%- endif %}
-</div>
-<br />
-{%- endif %}
+            </li>
+            
+        </ul>
+    </div>
+    {%- endif %}
 {%- endif -%}

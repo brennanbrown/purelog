@@ -18,21 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Watery Theme for Jekyll 🚰
+title: "Purelog: for Bloggers"
 email: mail@brennanbrown.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  A minimalist, bare-bones theme for Jekyll only using the Water.css
-  framework while still following the best practices possible for
-  accessibility and search-engine optimization.
+  A sidebar Jekyll theme using the Pure.css framework, 
+  designed for writers and bloggers. Under construction.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://watery.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
-repository: brennanbrown/watery
+url: "https://purelog.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+repository: brennanbrown/purelog
 twitter: brennankbrown
 github: brennanbrown
 
 google_analytics:
 comments: true
-disqus: watery-jekyll
+disqus: purelog-jekyll
 
 author: Brennan K. Brown
 author_bio: >-
