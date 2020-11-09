@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:wght@400;800&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -6,8 +6,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Lora", serif;
 }
 
 a {
@@ -33,6 +37,10 @@ nav {
   padding-bottom: 15px;
 }
 
+img {
+  max-width: 200px;
+}
+
 /* LAYOUT CSS */
 .pure-img-responsive {
   max-width: 100%;
@@ -48,14 +56,22 @@ nav {
   top: auto;
 }
 
+.header * {
+  font-family: "Open Sans", sans-serif;
+}
+
 .sidebar {
-  background: rgb(61, 79, 93);
+  background: #222;
   color: #fff;
+}
+
+.brand-photo {
+  max-width: 250px;
 }
 
 .brand-title,
 .brand-tagline {
-  margin: 0;
+  margin: auto -20px;
 }
 
 .brand-title {
@@ -63,9 +79,13 @@ nav {
   text-transform: uppercase;
 }
 
+.brand-title a {
+  color: white;
+}
+
 .brand-tagline {
   font-weight: 300;
-  color: rgb(176, 202, 219);
+  color: #ddd;
 }
 
 .nav-list {
@@ -82,7 +102,7 @@ nav {
 
 .nav-item a {
   background: transparent;
-  border: 2px solid rgb(176, 202, 219);
+  border: 2px solid rgb(195, 176, 219);
   color: #fff;
   margin-top: 1em;
   letter-spacing: 0.05em;
@@ -92,7 +112,7 @@ nav {
 
 .nav-item a:hover,
 .nav-item a:focus {
-  border: 2px solid rgb(61, 146, 201);
+  border: 2px solid rgb(61, 70, 201);
   text-decoration: none;
 }
 
@@ -101,9 +121,10 @@ nav {
   color: #aaa;
   border-bottom: 1px solid #eee;
   padding: 0.4em 0;
-  font-size: 80%;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.1em;
+  font-family: "Open Sans", sans-serif;
 }
 
 .content {
@@ -196,14 +217,13 @@ nav {
   }
 
   .header {
-    margin: 80% 2em 0;
+    margin: 5% 2em 0;
     text-align: right;
   }
 
   .sidebar {
     position: fixed;
-    top: 0;
-    bottom: 0;
+    height: 100vh;
   }
 
   .footer {
@@ -215,10 +235,94 @@ nav {
   .md-display {
     display: none;
   }
+
+  .brand-title,
+  .brand-tagline {
+    margin: 0;
+    padding: 0 10px;
+  }
 }
 
 /* JEKYLL CSS */
 
-.bottom {
-  position: bottom;
+.jekyll-header h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.content {
+  padding-top: 0;
+}
+
+#pages {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#current-page {
+  padding: 0px 15px;
+}
+
+/* NAVIGATION */
+
+.main-site-subheader {
+  border-bottom: 1px solid #f7f7f7;
+  padding-left: 15px;
+}
+
+.menu {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.menu a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-right: 1px grey solid;
+  margin-left: -5px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 10px;
+}
+
+.menu a:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+.about,
+.hashtags,
+.categories,
+.archive,
+.rss,
+.projects,
+.donate {
+  display: inline-block;
+}
+
+.about i {
+  color: #333;
+}
+
+.hashtags i {
+  color: #6f1f91;
+}
+
+.categories i {
+  color: #3878a0;
+}
+
+.archive i {
+  color: #56712d;
+}
+
+.rss i {
+  color: #cfa531;
+}
+
+.donate i {
+  color: #da6064;
 }
