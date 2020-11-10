@@ -59,7 +59,14 @@ plugins:
   - jekyll-paginate
 permalink: /:title
 
-theme_switcher: true
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      avatar: https://brennanbrown.ca/img/avatar.png
 
 # Allows all pages to be put into `_pages` folder
 # for easier navigation and better SEO.

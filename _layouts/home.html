@@ -18,8 +18,8 @@ layout: default
     {%- for post in posts -%}
     <section class="post">
         <header class="post-header">
-            <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar"
-                src="/img/common/tilo-avatar.png">
+            <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar"
+                src="{{post.avatar}}">
 
             <h2 class="post-title"> <a href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
