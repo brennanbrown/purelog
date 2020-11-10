@@ -138,8 +138,13 @@ footer {
   padding: 2em 1em 0;
 }
 
-.post {
+.post,
+.post-entry {
   padding-bottom: 2em;
+}
+
+.post-entry {
+  margin: 0 auto;
 }
 
 .post-body p,
@@ -217,6 +222,9 @@ footer {
     position: fixed;
     height: 100vh;
   }
+  .post-entry {
+  width: 70%;
+  }
 }
 
 @media screen and (max-width: 48em) {
@@ -232,6 +240,16 @@ footer {
   .brand-tagline {
     margin: 0;
     padding: 0 10px;
+  }
+
+  .post-entry {
+    width: 90%;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .post-header {
+    text-align: center;
   }
 
   .post-hr {
@@ -264,8 +282,14 @@ footer {
   font-weight: bold;
 }
 
+.paginate ul,
+footer ul {
+  padding-left: 0px;
+}
+
 .paginate * {
-  font-family: "Open Sans", sans-serif!important;
+  font-family: "Open Sans", 
+    sans-serif!important;
 }
 
 #current-page {
