@@ -6,8 +6,14 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4,
-p, ul, ol, li {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
   font-family: "Lora", serif;
 }
 
@@ -16,7 +22,8 @@ a {
   color: rgb(61, 146, 201);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: underline;
 }
 
@@ -25,7 +32,8 @@ h1 {
   text-align: center;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 700;
 }
 
@@ -72,12 +80,12 @@ footer {
 
 .brand-photo {
   margin: 10px 0;
-  max-width: 250px;
 }
 
-.brand-title, 
+.brand-title,
 .brand-tagline {
-  margin: auto -20px;
+  margin: 0;
+  margin-right: -20px;
 }
 
 .brand-title {
@@ -213,6 +221,10 @@ footer {
     text-align: right;
   }
 
+  .brand-photo {
+    max-width: 250px;
+  }
+
   .brand-title,
   .brand-tagline {
     text-align: right;
@@ -222,8 +234,9 @@ footer {
     position: fixed;
     height: 100vh;
   }
+
   .post-entry {
-  width: 70%;
+    width: 70%;
   }
 }
 
@@ -288,8 +301,7 @@ footer ul {
 }
 
 .paginate * {
-  font-family: "Open Sans", 
-    sans-serif!important;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 #current-page {
@@ -351,4 +363,21 @@ footer ul {
 
 .donate i {
   color: #da6064;
+}
+
+/* SEARCH */
+
+#search,
+.search_res p,
+#results-container {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+#results-container {
+  border: 1px solid black;
+}
+
+#search-input {
+  width: 96%;
+  margin: 10px 0;
 }

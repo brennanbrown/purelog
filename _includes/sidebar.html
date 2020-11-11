@@ -1,7 +1,9 @@
 <aside class="sidebar pure-u-1 pure-u-md-1-4">
     <div class="header">
         <a href="/">
-            <img class="brand-photo" src="{{site.url}}/assets/profile.png"/>
+            <span hidden>{{site.title}}
+                Header Image</span>
+            <img class="brand-photo" src="{{{site.url}}/{{site.header_image}}" alt="Photo of {{site.author}}" />
         </a>
         <h1 class="brand-title">
             <a href="/">{{site.title}}</a>
