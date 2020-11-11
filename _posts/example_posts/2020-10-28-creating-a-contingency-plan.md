@@ -8,6 +8,8 @@ tags:
   - Planning
   - Productivity
   - Writing
+author: Yui Doe
+avatar: assets/img/common/yui-avatar.png
 ---
 
 ### <b>Failure is Important</b>
@@ -16,7 +18,7 @@ Last month, I had the idea to write an article each day for the month. How long 
 
 Before I get into that, though, let’s take a look at the bright side of the situation. I managed to write two longform articles that I’m proud of:
 
-<https://writingcooperative.com/my-writing-process-4868f986f97f>  
+<https://writingcooperative.com/my-writing-process-4868f986f97f>
 
 The only reason those posts got written was because, for the first time, I had to churn things out. Challenging myself to write each day for a month made me think long-term and plan out a schedule. It made me think of different topics to explore and ideas to experiment with. In the past, I’ve truthfully just written when inspiration struck.
 

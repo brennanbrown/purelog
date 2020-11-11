@@ -29,6 +29,8 @@ repository: brennanbrown/purelog
 twitter: brennankbrown
 github: brennanbrown
 
+header_image: assets/profile.png
+
 google_analytics:
 comments: true
 disqus: purelog-jekyll
@@ -60,13 +62,13 @@ plugins:
 permalink: /:title
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-      avatar: https://brennanbrown.ca/img/avatar.png
+      author: Brennan K. Brown
+      avatar: assets/profile-sm.png
 
 # Allows all pages to be put into `_pages` folder
 # for easier navigation and better SEO.

@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Markdown Syntax Preview"
+title: "Markdown Syntax Preview"
 date: 2020-10-31
 tags:
   - jekyll
   - markdown
+author: Eric F.
+avatar: assets/img/common/ericf-avatar.png
 ---
 
 ![The Ultimate Guide to Markdown](http://blog.ghost.org/content/images/2015/03/markdown-guide-1.jpg)
@@ -15,7 +17,7 @@ Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 
 Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. While Markdown’s syntax has been influenced by several existing text-to-HTML filters — including Setext, atx, Textile, reStructuredText, Grutatext, and EtText — the single biggest source of inspiration for Markdown’s syntax is the format of plain text email.
 
-To this end, Markdown’s syntax is comprised entirely of punctuation characters, which punctuation characters have been carefully chosen so as to look like what they mean. E.g., asterisks around a word actually look like *emphasis*. Markdown lists look like, well, lists. Even blockquotes look like quoted passages of text, assuming you’ve ever used email.
+To this end, Markdown’s syntax is comprised entirely of punctuation characters, which punctuation characters have been carefully chosen so as to look like what they mean. E.g., asterisks around a word actually look like _emphasis_. Markdown lists look like, well, lists. Even blockquotes look like quoted passages of text, assuming you’ve ever used email.
 Inline HTML
 
 > Markdown’s syntax is intended for one purpose: to be used as a format for writing for the web.
@@ -36,26 +38,26 @@ The only restrictions are that block-level HTML elements — e.g. `<div>`, `
     #### This is an <h4> tag
     ##### This is an <h5> tag
     ###### This is an <h6> tag
-    
+
 ### Emphasis
 
     *This text will be italic*
     _This will also be italic_
-    
+
     **This text will be bold**
     __This will also be bold__
-    
+
     _You **can** combine them_
-    
+
 Result:
 
-*This text will be italic*
+_This text will be italic_
 
 _This will also be italic_
 
 **This text will be bold**
 
-__This will also be bold__
+**This will also be bold**
 
 _You **can** combine them_
 
@@ -70,21 +72,21 @@ _You **can** combine them_
 
 Result:
 
-* Milk
-* Bread
-    * Wholegrain
-* Butter
+- Milk
+- Bread
+  - Wholegrain
+- Butter
 
 **Ordered:**
 
-    1. Tidy the kitchen  
-    2. Prepare ingredients  
+    1. Tidy the kitchen
+    2. Prepare ingredients
     3. Cook delicious things
 
 Result:
 
-1. Tidy the kitchen  
-2. Prepare ingredients  
+1. Tidy the kitchen
+2. Prepare ingredients
 3. Cook delicious things
 
 ### Images
@@ -98,7 +100,7 @@ Result:
 ### Links
 
     [link](http://example.com)
-    
+
 Result:
 
 [link](http://example.com)
@@ -113,6 +115,7 @@ Result:
 Result:
 
 As Kanye West said:
+
 > We're living the future so
 > the present is our past.
 
@@ -216,8 +219,8 @@ Result:
 
 ```javascript
 function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
+  if (arg) {
+    $.facebox({ div: "#foo" });
   }
 }
 ```
@@ -248,13 +251,13 @@ Content in the first column | Content in the second column | Content in the thir
 Content in the forth row A | Content in the forth row B | Content in the forth row C |
 ```
 
-First Header | Second Header | Third Header |
------------- | ------------- ----------------
-Content from cell 1 | Content from cell 2 | Content from cell 3 |
-Content in the first column | Content in the second column | Content in the third column |
-Content in the forth row A | Content in the forth row B | Content in the forth row C |
+| First Header                | Second Header                | Third Header                |
+| --------------------------- | ---------------------------- | --------------------------- |
+| Content from cell 1         | Content from cell 2          | Content from cell 3         |
+| Content in the first column | Content in the second column | Content in the third column |
+| Content in the forth row A  | Content in the forth row B   | Content in the forth row C  |
 
 ## References
 
-* http://blog.ghost.org/markdown/
-* https://guides.github.com/features/mastering-markdown/
+- http://blog.ghost.org/markdown/
+- https://guides.github.com/features/mastering-markdown/

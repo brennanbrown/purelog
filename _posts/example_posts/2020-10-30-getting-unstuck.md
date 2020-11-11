@@ -9,6 +9,8 @@ tags:
   - Creativity
   - Inspiration
   - Habits
+author: Reid Doe
+avatar: assets/img/common/reid-avatar.png
 ---
 
 ## Taking a novel approach to life and breaking routines.
