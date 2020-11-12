@@ -69,6 +69,18 @@ defaults:
       layout: "post"
       author: Brennan K. Brown
       avatar: assets/profile-sm.png
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: post
+      content-type: notes
+  - scope:
+      path: ""
+      type: journals
+    values:
+      layout: post
+      content-type: journals
 
 # Allows all pages to be put into `_pages` folder
 # for easier navigation and better SEO.
@@ -76,6 +88,12 @@ collections:
   pages:
     output: true
     permalink: /:title
+  notes:
+    output: true
+    permalink: /notes/:title
+  journals:
+    output: true
+    permalink: /journals/:title
 
 # Exclude from processing.
 exclude:
