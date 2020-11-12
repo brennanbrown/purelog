@@ -41,8 +41,14 @@ nav {
   padding-bottom: 15px;
 }
 
-img {
-  max-width: 200px;
+mark {
+  background-color: #fffaa1;
+}
+
+blockquote {
+  border-left: 2px #aaa solid;
+  padding-left: 7px;
+  font-style: italic;
 }
 
 hr {
@@ -52,6 +58,23 @@ hr {
 footer {
   text-align: center;
   font-size: 26px;
+}
+
+footer span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .pure-menu-link {
+  color: #444;
+}
+
+footer .pure-menu-link:hover {
+  color: #111;
+  background-color: #fff;
+  text-decoration: none;
 }
 
 /* LAYOUT CSS */
@@ -64,18 +87,18 @@ footer {
   padding: 0;
 }
 
-.header {
+.sidebar {
+  background: #222;
+  color: #fff;
+}
+
+.sidebar-info {
   text-align: center;
   top: auto;
 }
 
-.header * {
+.sidebar-info * {
   font-family: "Open Sans", sans-serif;
-}
-
-.sidebar {
-  background: #222;
-  color: #fff;
 }
 
 .brand-photo {
@@ -137,7 +160,7 @@ footer {
   border-bottom: 1px solid #eee;
   padding: 0.4em 0;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.1em;
   font-family: "Open Sans", sans-serif;
 }
@@ -155,10 +178,27 @@ footer {
   margin: 0 auto;
 }
 
+.post-entry h1,
+.post-entry h2,
+.post-entry h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.post-header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-top: -10px;
+}
+
 .post-body p,
 .post-body li {
   font-size: 16px;
   text-align: justify;
+}
+
+.post-body blockquote p {
+  font-size: 22px;
 }
 
 .post-title {
@@ -179,8 +219,8 @@ footer {
 }
 
 .post-meta {
+  font-family: "Open Sans", sans-serif;
   color: #444;
-  font-size: 90%;
   margin: 0;
 }
 
@@ -208,15 +248,40 @@ footer {
   text-shadow: 0 1px 1px #333;
 }
 
+/* AUTHOR */
+
+#author {
+  overflow: auto;
+  padding: 0px 10px 15px;
+  text-align: justify;
+}
+
+#author img {
+  float: left;
+  max-height: 150px;
+  margin-top: -10px;
+  padding-right: 15px;
+}
+
+#author h3 {
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /* RESPONSIVE CSS */
 
 @media (min-width: 48em) {
+  .sm-display {
+    display: none;
+  }
+
   .content {
     padding: 2em 3em 0;
     margin-left: 25%;
   }
 
-  .header {
+  .sidebar-info {
     margin: 5% 2em 0;
     text-align: right;
   }
@@ -238,13 +303,17 @@ footer {
   .post-entry {
     width: 70%;
   }
+
+  .tags {
+    width: 30%;
+  }
+
+  footer .pure-menu-link {
+    padding: .5em 5px;
+  }
 }
 
 @media screen and (max-width: 48em) {
-  .pure-menu-link {
-    padding: 0 10px;
-  }
-
   .md-display {
     display: none;
   }
@@ -255,18 +324,22 @@ footer {
     padding: 0 10px;
   }
 
+  .brand-photo {
+    max-width: 200px;
+  }
+
   .post-entry {
     width: 90%;
     word-break: break-word;
     hyphens: auto;
   }
 
-  .post-header {
-    text-align: center;
+  .tags {
+    width: 49%;
   }
 
-  .post-hr {
-    display: none;
+  footer .pure-menu-link {
+    padding: 0 20px;
   }
 }
 
@@ -301,7 +374,7 @@ footer ul {
 }
 
 .paginate * {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif;
 }
 
 #current-page {
@@ -324,6 +397,10 @@ footer ul {
   text-decoration: none;
   color: #333;
   margin-top: 10px;
+}
+
+.donate a {
+  border-right: 0;
 }
 
 .menu a:hover {
@@ -378,6 +455,13 @@ footer ul {
 }
 
 #search-input {
-  width: 96%;
+  width: 94%;
   margin: 10px 0;
+  padding: 5px;
+  border: 1px #ccc solid;
+  border-radius: 8px;
+}
+
+.search-icon {
+  font-size: 24px;
 }
