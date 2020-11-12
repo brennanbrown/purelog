@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<hr class="post-hr"/>
-
 <article class="post-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
@@ -11,14 +9,14 @@ layout: default
         {%- include post-data.html -%}
     </header>
 
-    <div class="post-body itemprop="articleBody">
+    <div class="post-body itemprop=" articleBody">
         {{ content }}
     </div>
 
     {%- include author.html -%}
 
     {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
+    {%- include disqus_comments.html -%}
     {%- endif -%}
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

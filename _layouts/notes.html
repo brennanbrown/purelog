@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign notes = site.notes %}
+
+<div class="notes">
+    <h2 class="content-subhead">Recent Notes</h2>
+
+    {%- if notes.size > 0 -%}
+    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+
+    {%- for note in notes -%}
+    <section class="post">
+        <header class="note-header">
+            <h2 class="post-title">
+                <a href="{{ note.url | relative_url }}">
+                    {{ note.title | escape }}
+                </a>
+            </h2>
+
+            <p class="post-meta">
+                Written:
+                {{ note.date | date: date_format }}
+                | Tagged:
+                <span>
+                    {% for tag in note.tags %}
+                    <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+                    {% endfor %}
+                </span>
+            </p>
+        </header>
+
+        <div class="post-description">
+            <p>
+                <em>{{ note.content | strip_html | escape | truncate: 300}}</em>
+            </p>
+        </div>
+    </section>
+    {%- endfor -%}
+</div>
+
+
+<br />
+
+{%- endif -%}

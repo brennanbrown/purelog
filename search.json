@@ -10,7 +10,7 @@ layout: null
       "url"      : "{{ post.url }}",
       "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}
 
-    }{% unless forloop.last %},{% endunless %}
+    },
   {% endfor %}
 
   {% for post in site.journals %}
@@ -20,7 +20,7 @@ layout: null
       "url"      : "{{ post.url }}",
       "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}
 
-    },
+    }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 
   {% for post in site.notes %}
