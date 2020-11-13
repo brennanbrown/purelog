@@ -1,4 +1,3 @@
 ---
-layout: default
-permalink: /journal
+layout: journals
 ---

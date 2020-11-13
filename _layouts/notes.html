@@ -21,9 +21,7 @@ layout: default
             </h2>
 
             <p class="post-meta">
-                Written:
-                {{ note.date | date: date_format }}
-                | Tagged:
+                Tagged:
                 <span>
                     {% for tag in note.tags %}
                     <a href="/tags/#{{ tag }}">#{{ tag }}</a>

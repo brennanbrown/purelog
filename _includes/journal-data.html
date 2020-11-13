@@ -1,0 +1,13 @@
+<p>
+    {%- if page.author -%}
+    {% for author in page.author %}
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">By: {{ author }}</span></span>
+    {%- if forloop.last == false %}, {% endif -%}
+    {% endfor %}
+    {%- endif -%}
+    <br />
+    {%- for tag in page.tags -%}
+    <a href="/tags/#{{ tag }}">#{{ tag }}</a> &#8239;
+    {%- endfor -%}
+</p>

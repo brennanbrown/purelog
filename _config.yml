@@ -21,8 +21,8 @@
 title: "Purelog: for Writers"
 email: mail@brennanbrown.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  A sidebar Jekyll theme using the Pure.css framework, 
-  designed for writers and bloggers. Under construction.
+  A responsive sidebar Jekyll theme using the Pure.css framework, 
+  designed for writers and bloggers of all kinds.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://purelog.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 repository: brennanbrown/purelog
@@ -79,7 +79,7 @@ defaults:
       path: ""
       type: journals
     values:
-      layout: post
+      layout: journal-entry
       content-type: journals
 
 # Allows all pages to be put into `_pages` folder

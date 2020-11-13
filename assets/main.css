@@ -41,6 +41,10 @@ nav {
   padding-bottom: 15px;
 }
 
+img {
+  max-width: 100%;
+}
+
 mark {
   background-color: #fffaa1;
 }
@@ -53,6 +57,28 @@ blockquote {
 
 hr {
   color: #ddd;
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  color: #666;
+}
+
+th {
+  text-align: center;
 }
 
 footer {
@@ -106,7 +132,8 @@ footer .pure-menu-link:hover {
 }
 
 .brand-title,
-.brand-tagline {
+.brand-tagline,
+.nav {
   margin: 0;
   margin-right: -20px;
 }
@@ -143,6 +170,7 @@ footer .pure-menu-link:hover {
   border: 2px solid rgb(195, 176, 219);
   color: #fff;
   margin-top: 1em;
+  margin-right: 5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 85%;
@@ -195,6 +223,7 @@ footer .pure-menu-link:hover {
 .post-body li {
   font-size: 16px;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .post-body blockquote p {
@@ -246,6 +275,22 @@ footer .pure-menu-link:hover {
   margin-left: 1em;
   color: #fff;
   text-shadow: 0 1px 1px #333;
+}
+
+.journals {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.archive-links {
+  font-size: 22px;
+  padding: 5px 0;
+  list-style-type: decimal;
+}
+
+.archive-links a,
+.tags a {
+  color: #376a8c;
 }
 
 /* AUTHOR */
@@ -309,7 +354,7 @@ footer .pure-menu-link:hover {
   }
 
   footer .pure-menu-link {
-    padding: .5em 5px;
+    padding: 0.5em 5px;
   }
 }
 
@@ -336,6 +381,10 @@ footer .pure-menu-link:hover {
 
   .tags {
     width: 49%;
+  }
+
+  .journals {
+    max-width: 95%;
   }
 
   footer .pure-menu-link {

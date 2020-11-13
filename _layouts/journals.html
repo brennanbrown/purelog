@@ -12,29 +12,20 @@ layout: default
     {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
     {%- for journal in journals -%}
-    <section class="post">
+    <section class="journal">
         <header class="journal-header">
-            <h2 class="post-title">
-                <a href="{{ journal.url | relative_url }}">
-                    {{ journal.title | escape }}
-                </a>
-            </h2>
-
-            <p class="post-meta">
-                Written:
-                {{ journal.date | date: date_format }}
-                | Tagged:
-                <span>
-                    {% for tag in journal.tags %}
-                    <a href="/tags/#{{ tag }}">#{{ tag }}</a>
-                    {% endfor %}
-                </span>
-            </p>
+            <small>
+                <h2 class="post-title">
+                    <a href="{{ journal.url | relative_url }}">
+                        {{ journal.title | escape }}
+                    </a>
+                </h2>
+            </small>
         </header>
 
         <div class="post-description">
             <p>
-                <em>{{ journal.content | strip_html | escape | truncate: 300}}</em>
+                <em>{{ journal.content | escape | truncate: 300}}</em>
             </p>
         </div>
     </section>
