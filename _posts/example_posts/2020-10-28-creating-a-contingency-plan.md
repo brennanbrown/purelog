@@ -3,13 +3,13 @@ title: Creating a Contingency Plan
 date: 2020-10-28
 author: Brennan K. Brown
 layout: post
-permalink: /posts/creating-a-contingency-plan/
 tags:
   - Planning
   - Productivity
   - Writing
 author: Yui Doe
 avatar: assets/img/common/yui-avatar.png
+category: Guides
 ---
 
 ### <b>Failure is Important</b>

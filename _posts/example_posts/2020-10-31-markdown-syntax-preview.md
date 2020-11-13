@@ -3,13 +3,12 @@ layout: post
 title: "Markdown Syntax Preview"
 date: 2020-10-31
 tags:
-  - jekyll
-  - markdown
+  - Jekyll
+  - Markdown
 author: Eric F.
 avatar: assets/img/common/ericf-avatar.png
+category: Example Posts
 ---
-
-![The Ultimate Guide to Markdown](http://blog.ghost.org/content/images/2015/03/markdown-guide-1.jpg)
 
 ## Philosophy:
 

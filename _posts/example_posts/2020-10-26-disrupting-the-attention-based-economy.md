@@ -3,10 +3,10 @@ title: Disrupting the Attention-based Economy
 date: 2020-10-26
 author: Brennan K. Brown
 layout: post
-permalink: /posts/disrupting-the-attention-based-economy/
 tags:
   - Productivity
   - Habits
+category: Essays
 ---
 
 When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distractions that will grab your awareness away from what you’re doing.

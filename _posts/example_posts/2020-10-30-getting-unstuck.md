@@ -4,13 +4,13 @@ title: "Getting Unstuck for Creatives"
 date: 2020-10-30
 author: Brennan K. Brown
 layout: post
-permalink: /posts/getting-unstuck
 tags:
   - Creativity
   - Inspiration
   - Habits
 author: Reid Doe
 avatar: assets/img/common/reid-avatar.png
+category: How-To
 ---
 
 ## Taking a novel approach to life and breaking routines.
