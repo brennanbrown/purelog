@@ -282,6 +282,12 @@ footer .pure-menu-link:hover {
   max-width: 70%;
 }
 
+.post-description {
+  color: black;
+  line-height: 1.8em;
+  margin-top: -15px;
+}
+
 .archive-links {
   font-size: 22px;
   padding: 5px 0;
