@@ -4,80 +4,89 @@ layout: default
 {{ content }}
 
 {% if site.paginate %}
-{% assign posts = paginator.posts %}
+    {% assign posts = paginator.posts %}
 {% else %}
-{% assign posts = site.posts %}
+    {% assign posts = site.posts %}
 {% endif %}
 
 <div class="posts">
     <h2 class="content-subhead">Recent Posts</h2>
 
     {%- if posts.size > 0 -%}
-    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
-    {%- for post in posts -%}
-    <section class="post">
-        <header class="feed-header">
-            <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar"
-                src="{{site.url}}/{{post.avatar}}" />
-            <h2 class="post-title"> <a href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                </a>
-            </h2>
-            <p class="post-meta">
-                Posted:
-                {{ post.date | date: date_format }} | <br class="sm-display" />
-                By <a href="#" class="post-author">{{ post.author }}</a> under <span>
-                    {% for tag in post.tags %}
-                    <a href="/tags/#{{ tag }}">#{{ tag }}</a>
-                    {% endfor %}
-                </span>
-            </p>
-        </header>
+        {%- for post in posts -%}
+            <section class="post">
+                <header class="feed-header">
+                    <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar" src="{{site.url}}/{{post.avatar}}"/>
+                    <h2 class="post-title">
+                        <a href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h2>
+                    <p class="post-meta">
+                        Posted:
+                        {{ post.date | date: date_format }}
+                        |
+                        <br class="sm-display"/>
+                        By
+                        <a class="post-author" href="#">{{ post.author }}</a>
+                        under
+                        <span>
+                            {% for tag in post.tags %}
+                                <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+                            {% endfor %}
+                        </span>
+                    </p>
+                </header>
 
-        <div class="post-description">
-            <p class="md-display">
-                <em>{{ post.content | strip_html | escape | truncate: 400}}</em>
-            </p>
-            <p class="sm-display">
-                <em>{{ post.content | strip_html | escape | truncate: 300}}</em>
-            </p>
+                <div class="post-description">
+                    <p class="md-display">
+                        <em>{{ post.content | strip_html | escape | truncate: 400}}</em>
+                    </p>
+                    <p class="sm-display">
+                        <em>{{ post.content | strip_html | escape | truncate: 300}}</em>
+                    </p>
+                </div>
+            </section>
+        {%- endfor -%}
+    </div>
+
+
+    <br/>
+
+    {% if site.paginate %}
+        <div class="pure-menu pure-menu-horizontal paginate">
+            <ul>
+
+                {%- if paginator.previous_page %}
+                    <li class="pure-menu-item">
+                        <a href="{{ paginator.previous_page_path | relative_url }}">
+                            🡐
+                                            Previous</a>
+                    </li>
+                {%- else %}
+                    <li class="pure-menu-item">#</li>
+                {%- endif %}
+
+                <li class="pure-menu-item" id="current-page">
+                    Page
+                    {{ paginator.page }}
+                    of
+                    {{ paginator.total_pages }}
+                </li>
+
+                {%- if paginator.next_page %}
+                    <li class="pure-menu-item">
+                        <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next
+                                            🡒
+                        </a>
+                    </li>
+                {%- else %}
+                    <li class="pure-menu-item">#</li>
+                {%- endif %}
+
+            </ul>
         </div>
-    </section>
-    {%- endfor -%}
-</div>
-
-
-<br />
-
-{% if site.paginate %}
-<div class="pure-menu pure-menu-horizontal paginate">
-    <ul>
-
-        {%- if paginator.previous_page %}
-        <li class="pure-menu-item">
-            <a href="{{ paginator.previous_page_path | relative_url }}">
-                🡐
-                Previous</a> </li>
-        {%- else %}
-        <li class="pure-menu-item">#</li>
-        {%- endif %}
-
-        <li class="pure-menu-item" id="current-page">
-            Page {{ paginator.page }}
-        </li>
-
-        {%- if paginator.next_page %}
-        <li class="pure-menu-item">
-            <a href="{{ paginator.next_page_path | relative_url }}" class="next-page">Next
-                🡒
-            </a>
-        </li>
-        {%- else %}
-        <li class="pure-menu-item">#</li>
-        {%- endif %}
-
-    </ul>
-</div>
-{%- endif %}
+    {%- endif %}
 {%- endif -%}
