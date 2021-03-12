@@ -23,6 +23,7 @@
 
 <!-- BADGES -->
 <p align="center">
+<a href="https://app.netlify.com/sites/purelog/deploys"><img src="https://api.netlify.com/api/v1/badges/062e333f-9e9d-440d-9b40-16d11959793d/deploy-status" alt="Netlify Status"></a>
 <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/brennanbrown/purelog"> 
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brennanbrown/purelog"> 
 <a href="https://github.com/brennanbrown/purelog/search?l=html"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennanbrown/purelog"></a>
