@@ -114,7 +114,7 @@ footer .pure-menu-link:hover {
 }
 
 .sidebar {
-  background: #8ABBDA;
+  background: #E2F4FF;
   color: #fff;
 }
 
@@ -139,7 +139,7 @@ footer .pure-menu-link:hover {
 }
 
 .brand-title {
-  padding-top: 15px;
+  padding-top: 12px;
   text-transform: uppercase;
 }
 
@@ -167,13 +167,13 @@ footer .pure-menu-link:hover {
 
 .nav-item a {
   background: transparent;
-  border: 2px solid rgb(195, 176, 219);
+  border: 1px solid white;
   color: #fff;
   margin-top: 1em;
   margin-right: 5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 85%;
+  font-size: 70%;
 }
 
 .nav-item a:hover,
