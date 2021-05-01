@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Purelog: for Writers"
-email: mail@brennanbrown.ca
+title: "Step 1 : SEED"
+email: glowhyun1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A responsive sidebar Jekyll theme using the Pure.css framework, 
   designed for writers and bloggers of all kinds.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://purelog.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://Alex-im2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: brennanbrown/purelog
 twitter: brennankbrown
 github: brennanbrown
@@ -35,14 +35,14 @@ google_analytics:
 comments: true
 disqus: purelog-jekyll
 
-author: Brennan K. Brown
-author_bio: >-
-  Hey there! 😄 My name is Brennan, I'm a 24-year-old Métis web developer and 
-  content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
-  Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, 
-  and I'm looking to help those that need web development work done, or 
-  searching for ideas and management for their next content project.
-author_pic: https://brennanbrown.ca/img/avatar.png
+# author: Brennan K. Brown
+# author_bio: >-
+#   Hey there! 😄 My name is Brennan, I'm a 24-year-old Métis web developer and 
+#   content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
+#   Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, 
+#   and I'm looking to help those that need web development work done, or 
+#   searching for ideas and management for their next content project.
+# author_pic: https://brennanbrown.ca/img/avatar.png
 
 paginate: 4
 paginate_path: "/:num/"
