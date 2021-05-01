@@ -21,7 +21,7 @@
 title: "Step 1 : SEED"
 email: glowhyun1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-Hello. i'm Alex im. This blog is my  study space. i am going to hard study!!
+  Hello. i'm Alex im. This blog is my study space. i am going to hard study!!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://Alex-im2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: brennanbrown/purelog
