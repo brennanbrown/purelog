@@ -21,7 +21,7 @@
 title: "Step 1 : SEED"
 email: glowhyun1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-Hello. i'm Alex im. This blog is my study space. i am going to hard study!!
+Hello. i'm Alex im. This blog is my  study space. i am going to hard study!!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://Alex-im2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: brennanbrown/purelog
@@ -36,10 +36,10 @@ disqus: purelog-jekyll
 
 # author: Brennan K. Brown
 # author_bio: >-
-#   Hey there! 😄 My name is Brennan, I'm a 24-year-old Métis web developer and 
-#   content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
-#   Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, 
-#   and I'm looking to help those that need web development work done, or 
+#   Hey there! 😄 My name is Brennan, I'm a 24-year-old Métis web developer and
+#   content strategist from Winnipeg, Manitoba and currently reside in Calgary,
+#   Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU,
+#   and I'm looking to help those that need web development work done, or
 #   searching for ideas and management for their next content project.
 # author_pic: https://brennanbrown.ca/img/avatar.png
 
