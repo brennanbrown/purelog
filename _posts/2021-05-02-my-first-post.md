@@ -2,10 +2,10 @@
 layout: post
 title: "Finally i made it."
 date: 2021-05-02
+category: GITHUB
 tags:
   - Github
   - Jekyll
-category: GITHUB
 ---
 
 
