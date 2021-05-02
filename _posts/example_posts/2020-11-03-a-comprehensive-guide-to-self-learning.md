@@ -1,5 +1,6 @@
 ---
 title: A Comprehensive Guide to Self-Learning
+draft: true
 author: Reid Doe
 avatar: assets/img/common/reid-avatar.png
 categories:
