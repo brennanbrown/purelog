@@ -236,11 +236,11 @@ footer .pure-menu-link:hover {
   margin-bottom: 0.2em;
 }
 
-.post-avatar {
+/* .post-avatar {
   border-radius: 50px;
   float: right;
   margin-left: 1em;
-}
+} */
 
 .post-description {
   color: black;
@@ -248,7 +248,7 @@ footer .pure-menu-link:hover {
 }
 
 .post-meta {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #444;
   margin: 0;
 }
