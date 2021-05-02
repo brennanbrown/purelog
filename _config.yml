@@ -1,6 +1,6 @@
 title: Alex's study blog
 email: glowhyun1@gmail.com
-description: >-Hello. i'm Alex im. This blog is my study space. i am going to hard study!! # this means to ignore newlines until "baseurl:"
+description: Hello. i'm Alex im. This blog is my study space. i am going to hard study!! # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://Alex-im2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
