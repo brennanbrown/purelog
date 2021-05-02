@@ -52,7 +52,7 @@ mark {
 blockquote {
   border-left: 2px #aaa solid;
   padding-left: 7px;
-  /* font-style: italic; */
+  font-style: italic;
 }
 
 hr {
@@ -231,7 +231,7 @@ footer .pure-menu-link:hover {
 }
 
 .post-title {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #364650;
   margin-bottom: 0.2em;
 }
