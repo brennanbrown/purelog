@@ -312,6 +312,7 @@ footer .pure-menu-link:hover {
   max-height: 150px;
   margin-top: -10px;
   padding-right: 15px;
+  width: 0;
 }
 
 #author h3 {

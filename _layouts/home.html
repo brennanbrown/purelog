@@ -17,8 +17,8 @@ layout: default
 
         {%- for post in posts -%}
             <section class="post">
-                <header class="feed-header">
-                    <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar" src="{{site.url}}/{{post.avatar}}"/>
+                <!-- <header class="feed-header">
+                    <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar" src="{{site.url}}/{{post.avatar}}"/> -->
                     <h2 class="post-title">
                         <a href="{{ post.url | relative_url }}">
                             {{ post.title | escape }}
@@ -29,9 +29,9 @@ layout: default
                         {{ post.date | date: date_format }}
                         |
                         <br class="sm-display"/>
-                        By
-                        <a class="post-author" href="#">{{ post.author }}</a>
-                        under
+                        <!-- By
+                        <a class="post-author" href="#">{{ post.author }}</a> 
+                        under-->
                         <span>
                             {% for tag in post.tags %}
                                 <a href="/tags/#{{ tag }}">#{{ tag }}</a>

@@ -2,7 +2,7 @@
 layout: post
 title: "지킬 블로그템플릿으로 템플릿 만들기"
 date: 2021-05-02
-categories: GITHUB
+category: GITHUB
 tags:
   - Github
   - Jekyll
