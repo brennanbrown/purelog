@@ -52,7 +52,7 @@ mark {
 blockquote {
   border-left: 2px #aaa solid;
   padding-left: 7px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 hr {
