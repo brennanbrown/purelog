@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to Jekyll!"
-published: false
+draft: true
 date: 2020-11-01
 tags:
   - Jekyll
