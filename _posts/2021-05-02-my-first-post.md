@@ -23,4 +23,4 @@ tags:
 <https://jekyll-themes.com/purelog/><br>
 이 템플릿으로 정했다.  
 
-![text](../assets/_post_img/21-05-02-01.png "이미지 설명")
+![text](../_post_img/21-05-02-01.png "이미지 설명")
