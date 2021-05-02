@@ -19,5 +19,9 @@ tags:
 6. 폰트 변경하기
 
 ### 템플릿 정하기
-<https://jekyll-themes.com/purelog/>
+<https://jekyll-themes.com/purelog/><br>
 이 템플릿으로 정했다.  
+
+사진이 안나오넹
+![fork](../assets/_post_img/21-05-02-01.png)
+  Format: ![Alt Text](21-05-02-01.png "Title")

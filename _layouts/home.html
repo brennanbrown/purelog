@@ -29,9 +29,9 @@ layout: default
                         {{ post.date | date: date_format }}
                         |
                         <br class="sm-display"/>
-                        <!-- By
-                        <a class="post-author" href="#">{{ post.author }}</a> 
-                        under-->
+                        Category :
+                        <a class="post-author" href="#">{{ post.category }}</a>
+                        Tag : 
                         <span>
                             {% for tag in post.tags %}
                                 <a href="/tags/#{{ tag }}">#{{ tag }}</a>
