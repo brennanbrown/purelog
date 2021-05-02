@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -15,7 +15,7 @@ ul,
 ol,
 li {
   font-family: "Lora", serif;
-}
+} */
 
 a {
   text-decoration: none;
