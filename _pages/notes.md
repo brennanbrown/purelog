@@ -1,0 +1,4 @@
+---
+layout: notes
+permalink: /notes
+---
