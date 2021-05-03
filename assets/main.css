@@ -19,7 +19,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #6652FF;
 }
 
 a:hover,
@@ -190,7 +190,7 @@ footer .pure-menu-link:hover {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 .content {
@@ -214,16 +214,16 @@ footer .pure-menu-link:hover {
 }
 
 .post-header p {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 14px;
   margin-top: -10px;
 }
 
 .post-body p,
 .post-body li {
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .post-body blockquote p {
@@ -248,7 +248,7 @@ footer .pure-menu-link:hover {
 }
 
 .post-meta {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
   color: #444;
   margin: 0;
 }
