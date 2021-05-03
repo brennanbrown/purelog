@@ -23,4 +23,10 @@ tags:
 <https://jekyll-themes.com/purelog/><br>
 이 템플릿으로 정했다.  
 
-![text](https://github.com/Alex-im2/Alex-im2.github.io/blob/master/_post_img/21-05-02-01.png?raw=true "fork")
+
+
+|<a href="https://github.com/Alex-im2/Alex-im2.github.io/blob/master/_post_img/21-05-02-01.png?raw=true" target="_blank" rel="fork">![fork](https://github.com/Alex-im2/Alex-im2.github.io/blob/master/_post_img/21-05-02-01.png?raw=true)</a>|
+|:--:|
+| *repository fork* |
+
+내 repository에 들어와진 걸 확인하고 Setting에 들어간다.
