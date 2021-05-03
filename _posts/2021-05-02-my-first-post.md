@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "지킬 블로그템플릿으로 템플릿 만들기"
-date: 2021-05-02
+date: 2021-05-03
 category: GITHUB
 tags:
   - Github
@@ -18,10 +18,9 @@ tags:
 5. 포스팅해보기
 6. 폰트 변경하기
 
-### 템플릿 정하기
+---
+### 1. 템플릿 정하기
 <https://jekyll-themes.com/purelog/><br>
 이 템플릿으로 정했다.  
 
-사진이 안나오넹
-![fork](../assets/_post_img/21-05-02-01.png)
-  Format: ![Alt Text](21-05-02-01.png "Title")
+![text](https://github.com/Alex-im2/Alex-im2.github.io/blob/master/_post_img/21-05-02-01.png?raw=true "fork")
