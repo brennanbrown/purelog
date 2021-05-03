@@ -25,7 +25,7 @@ tags:
 
 
 
-|<a href="https://github.com/Alex-im2/Alex-im2.github.io/blob/master/_post_img/21-05-02-01.png?raw=true" target="_blank" rel="fork">![fork](https://github.com/Alex-im2/Alex-im2.github.io/blob/master/_post_img/21-05-02-01.png?raw=true)</a>|
+|<a href="https://github.com/Alex-im2/Alex-im2.github.io/blob/master/assets/_post_img/21-05-02-01.jpg?raw=true" target="_blank" rel="fork">![fork](https://github.com/Alex-im2/Alex-im2.github.io/blob/master/assets/_post_img/21-05-02-01.jpg?raw=true)</a>|
 |:--:|
 | *repository fork* |
 
