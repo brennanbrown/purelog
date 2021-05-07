@@ -265,3 +265,89 @@ element = document.querySelector(selectors)
 
 
 ---
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/p71PrgY0bbM/0.jpg)](https://www.youtube.com/watch?v=p71PrgY0bbM)|
+|---|
+|WEB2 JavaScript - 13.프로그램,프로그래밍,프로그래머|
+
+|    |HTML|JAVASCRIPT|
+|:--:|:--:|:--:|
+|컴퓨터언어| O | O |
+|프로그래밍언어| X | O |
+
+
+- PROGRAM
+- PROGRAMMING
+- PROGRAMMER
+
+---
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/A2qp-jpk_XA/0.jpg)](https://www.youtube.com/watch?v=A2qp-jpk_XA)|
+|---|
+|WEB2 JavaScript - 15. 비교 연산자와 블리언|
+
+<span style = "color:red"> 하나의 프로그램이 하나의 흐름으로 가는 것이 아니라 조건에 따라 다르게 실행된다.
+ </span>
+
+---
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="yLMLrNR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLMLrNR">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/yLMLrNR">
+  yLMLrNR</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+-> 여기서 ===란
+: 비교연산자, 이항연산자
+좌항과 우항을 결합해서 어떤 데이터를 만든다. <br/>
+__좌항과 우항을 비교하여 True, False 이 둘 중 하나의 값을
+만들어내는 연산자이다.__<br/>
+True와 False라는 두가지 값을 묶어서 __Boolean__이라고 말한다.
+<br/>
+<br/>
+
+__Boolean__ 은 java script의 6가지 데이터 타입 중 하나
+데이터 타입
+- __Boolean__ : True, False 두가지 밖에 없다
+- Null
+- Undefined
+- __Number__ : 무수히 많다
+- __String__ : 무수히 많다
+- Symbol (ECMAScript 6에 추가됨)
+
+
+
+```html
+<h3>1&lt2</h3>
+-> 1<2라고 표현하고 싶으면 &lessthan이라는 뜻으로 &lt;을 쓰면 된다.
+html에서 꺽새를 인식하기 때문에 바꿔주는 것.
+-> 반대로는 &gt;
+<script>
+  document.write(1<2)
+</script>
+-> 하게 되면 결과값 true가 나옴
+```
+
+---
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/Gt2iGEEKXww/0.jpg)](https://www.youtube.com/watch?v=Gt2iGEEKXww)|
+|---|
+|WEB2 JavaScript - 17.조건문의 활용|
+
+boolean을 어디서 쓸까?
+
+if 뒤에는 boolean 데이터 타입이 온다.
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="yLMLrNR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLMLrNR">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/yLMLrNR">
+  yLMLrNR</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+> night , day 버튼이 두 개 있는 걸
+하나로 바꿀 수 있다.
+input에 id값을 "night_day"로 주고 if와 else를 사용하여 value 값으로 조건문을 만들었다.
+
+---
