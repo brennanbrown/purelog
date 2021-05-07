@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 생활코딩 - WEB2 - JavaScript
-date: 2021-05-03
+title: "생활코딩 - WEB2 - JavaScript"
+date: 2021-05-07
 category: javascript
 tags:
   - Github
@@ -329,10 +329,14 @@ html에서 꺽새를 인식하기 때문에 바꿔주는 것.
 -> 하게 되면 결과값 true가 나옴
 ```
 
----
+---  
+
+<br/>
+
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/Gt2iGEEKXww/0.jpg)](https://www.youtube.com/watch?v=Gt2iGEEKXww)|
 |---|
 |WEB2 JavaScript - 17.조건문의 활용|
+
 
 boolean을 어디서 쓸까?
 
