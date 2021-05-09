@@ -11,7 +11,7 @@ tags:
 # WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/Ru5zGHkOgic/0.jpg)](https://www.youtube.com/watch?v=Ru5zGHkOgic)|
-|---|
+|:---:|
 |WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그|
 
 
@@ -42,11 +42,17 @@ javascrip를 사용하려면 html의 body사이에 스크립트 선언을 해주
   : html은 정적
   : javascript는 동적
 
----
+  <br>
+  <br>
+
+  ------
+
+  <br>
+  <br>
 # WEB2 JavaScript - 4.HTML과 JS의 만남 : 이벤트
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/-hdtrReY9Zw/0.jpg)](https://www.youtube.com/watch?v=-hdtrReY9Zw)|
-|---|
+|:---:|
 |WEB2 JavaScript - 4.HTML과 JS의 만남 : 이벤트|
 
 
@@ -91,18 +97,24 @@ javascript keydown event attribute검색
   >[[자바스크립트] 키보드 이벤트 (keydown/keyup)by Dale Seo](https://www.daleseo.com/js-key-events/)
 
 
----
+  <br>
+  <br>
+
+  ------
+
+  <br>
+  <br>
 # WEB2 JavaScript - 5.HTML과 JS의 만남 (콘솔)
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/-VKIqaEdDVU/0.jpg)](https://www.youtube.com/watch?v=-VKIqaEdDVU)|
-|---|
+|:---:|
 |WEB2 JavaScript - 5.HTML과 JS의 만남 (콘솔)|
 
 
 
 페이지검사 - Console 로 가면 파일을 만들지 않고도 자바스크립트를 실행할 수 있다.<br/>
 예를들어 아무 텍스트를 Console에 복붙하고 복붙을 text라고 했을 때<br/>
-'text' 따옴표로 묶어주면 따옴표 사이가 __문자__가 된다.<br/>
+'text' 따옴표로 묶어주면 따옴표 사이가 __문자__ 가 된다.<br/>
 javascript는 문자의 개수를 알려주는 기능이 있다 : length<br/>
 alert('text'.length) 하고 enter를 누르면 문자의 개수가 alert로 뜬다.
 
@@ -111,11 +123,17 @@ alert('text'.length) 하고 enter를 누르면 문자의 개수가 alert로 뜬�
 
 강의 요약 : console기능을 사용하면 지금 보고 있는 웹페이지를 대상으로 자바스크립트가 실행된다.
 
----
+<br>
+<br>
+
+------
+
+<br>
+<br>
 # WEB2 JavaScript - 6.데이터타입 - 문자열과 숫자
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/P8C8VNiM33A/0.jpg)](https://www.youtube.com/watch?v=P8C8VNiM33A)|
-|---|
+|:---:|
 |WEB2 JavaScript - 6.데이터타입 - 문자열과 숫자|
 
 google - <u>javascrips data type</u> 검색 <br/>
@@ -161,11 +179,17 @@ number에서 중요한 것은 연산이다 +, - ...
 -> hello world
 ```
 
----
+<br>
+<br>
+
+------
+
+<br>
+<br>
 # WEB2 JavaScript - 7.변수와 대입 연산자
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/absJhWQAS40/0.jpg)](https://www.youtube.com/watch?v=absJhWQAS40)|
-|---|
+|:---:|
 |WEB2 JavaScript - 7.변수와 대입 연산자|
 
 ```
@@ -193,11 +217,17 @@ var word = 'example'; <br/>
 "Her courage is an __"+word+"__ to us all." 라고 치면<br/>
 -> "Her courage is an example to us all." 라고 나오게 된당.
 
----
+<br>
+<br>
+
+------
+
+<br>
+<br>
 # WEB2 JavaScript - 8.웹브라우저 제어
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/5tqfbgfA1LY/0.jpg)](https://www.youtube.com/watch?v=5tqfbgfA1LY)|
-|---|
+|:---:|
 |WEB2 JavaScript - 12.제어할 태그 선택하기|
 
 
@@ -241,6 +271,7 @@ element = document.querySelector(selectors)
 이제 자바스크립트로 body부분을 지목해주었으니 색깔을 변경해야한다.
 
 자바스크립트로 element style을 어떻게 변경하는지 검색해보자.
+
 구글 - javascript element style 검색
 <https://www.w3schools.com/jsref/prop_html_style.asp>
 
@@ -253,21 +284,28 @@ element = document.querySelector(selectors)
   <input type="button" value="day">
 </body>
 ```
-.style.backgoundColor 를 적어준다. background에서 Color __c__는 대문자
-.style.color 는 백그라운드 안 text
+.style.backgoundColor 를 적어준다. background에서 Color __C__ 는 대문자로
+.style.color 는 백그라운드 안 text를 말한다.
 
-<p class="codepen" data-height="307" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="yLMLrNR" style="height: 307px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLMLrNR">
-  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/yLMLrNR">
-  yLMLrNR</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="LYWVOBM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 12강">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/LYWVOBM">
+  생활코딩 12강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+<br>
+<br>
 
----
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 13.프로그램,프로그래밍,프로그래머
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/p71PrgY0bbM/0.jpg)](https://www.youtube.com/watch?v=p71PrgY0bbM)|
-|---|
+|:---:|
 |WEB2 JavaScript - 13.프로그램,프로그래밍,프로그래머|
 
 |    |HTML|JAVASCRIPT|
@@ -280,19 +318,27 @@ element = document.querySelector(selectors)
 - PROGRAMMING
 - PROGRAMMER
 
----
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 15. 비교 연산자와 블리언
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/A2qp-jpk_XA/0.jpg)](https://www.youtube.com/watch?v=A2qp-jpk_XA)|
-|---|
+|:---:|
 |WEB2 JavaScript - 15. 비교 연산자와 블리언|
 
 <span style = "color:red"> 하나의 프로그램이 하나의 흐름으로 가는 것이 아니라 조건에 따라 다르게 실행된다.
  </span>
 
 ---
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="yLMLrNR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLMLrNR">
-  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/yLMLrNR">
-  yLMLrNR</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="yLMNPZz" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 15강">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/yLMNPZz">
+  생활코딩 15강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -329,22 +375,30 @@ html에서 꺽새를 인식하기 때문에 바꿔주는 것.
 -> 하게 되면 결과값 true가 나옴
 ```
 
----  
+<br>
+<br>
 
-<br/>
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 17.조건문의 활용
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/Gt2iGEEKXww/0.jpg)](https://www.youtube.com/watch?v=Gt2iGEEKXww)|
-|---|
+|:---:|
 |WEB2 JavaScript - 17.조건문의 활용|
+
+
 
 
 boolean을 어디서 쓸까?
 
 if 뒤에는 boolean 데이터 타입이 온다.
 
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="yLMLrNR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLMLrNR">
-  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/yLMLrNR">
-  yLMLrNR</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="MWpwOxO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 17강">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/MWpwOxO">
+  생활코딩 17강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -354,11 +408,19 @@ if 뒤에는 boolean 데이터 타입이 온다.
 하나로 바꿀 수 있다.
 input에 id값을 "night_day"로 주고 if와 else를 사용하여 value 값으로 조건문을 만들었다.
 
----
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 18.리팩토링 중복의 제거
 
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/vwRkFRke7ls/0.jpg)](https://www.youtube.com/watch?v=vwRkFRke7ls)|
-|---|
+|:---:|
 |WEB2 JavaScript - 18.리팩토링 중복의 제거|
 
 ### 리팩토링이란?<br/>
@@ -449,13 +511,18 @@ if (this.value === 'night'){
 }
 ">
 ```
-<br/>
+<br>
+<br>
 
----
-<br/>
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 20.배열
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/aBJzzhQ6y-o/0.jpg)](https://www.youtube.com/watch?v=aBJzzhQ6y-o)|
-|---|
+|:---:|
 |WEB2 JavaScript - 20.배열|
 
 ### Syntax란?
@@ -494,12 +561,18 @@ array의 유형은 굉장히 많다.
     // 결과 : B
   </script>
 ```
-<br/>
+<br>
+<br>
 
----
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 21.반복문
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/ZupPmuWPSdE/0.jpg)](https://www.youtube.com/watch?v=ZupPmuWPSdE)|
-|---|
+|:---:|
 |WEB2 JavaScript - 21.반복문|
 
 ```html
@@ -544,55 +617,139 @@ array의 유형은 굉장히 많다.
   </ul>
 </body>
 ```
----
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 22.배열과 반복문
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/BjkfkKdlvLo/0.jpg)](https://www.youtube.com/watch?v=BjkfkKdlvLo)|
-|---|
+|:---:|
 |WEB2 JavaScript - 22.배열과 반복문|
 
 ## <span style="color:red"> 중요 </span>
 배열과 변수를 사용하여 변수안의 값을 리스트화 시키기
 
 
-```html
-<body>
-  <h1>Loop & Array</h1>
-  <h2>Co workers</h2>
-  <ul>
-    <li>A</li>
-    <li>B</li>
-    <li>C</li>
-    <li>D</li>
-  </ul>
+``` html
 
-  A,B,C,D가 아주 여러개라면 리스트화 시키기가 힘들 것이다.
-  서로 연관된 데이터들을 담는 방법 : 배열
-  배열에 담겨있는 데이터를 순차적으로 꺼내는 방법 : 반복
+  <body>
+    <h1>Loop & Array</h1>
+    <h2>Co workers</h2>
+    <ul>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
 
-  <h1>Loop & Array</h1>
-  <script>
-    var coworkers = ['A','B','C','D']
-    // A,B,C,D를 배열에 넣는다.  
-    //  배열에서 각각의 항목들을 원소 : element
-  </script>
-  <h2>Co workers</h2>
-  <ul>
+    A,B,C,D가 아주 여러개라면 리스트화 시키기가 힘들 것이다.
+    서로 연관된 데이터들을 담는 방법 : 배열
+    배열에 담겨있는 데이터를 순차적으로 꺼내는 방법 : 반복
+
+    <h1>Loop & Array</h1>
     <script>
-      var i = 0;
-      while(i < 4){
-        document.write('<li>'+coworkers[i]+'</li>');
-        i = i + 1;
-      }
-    // document.write가 4번 실행되도록 앞 강의처럼 i 를 사용했다.
-    // 위 coworkers의 배열에 A,B,C,D도 순서를 가진다. : element값.
-    //  그 순서를 반복되는 반복문에서 i의 값을 사용할 수 있을 것이다.
-    //  i의 값은 반복이 될 때 마다 1씩 늘어날 것이기에.
-    하지만 여기서 문제가 하나 있다.
-      만약 coworkers의 element가 늘어나거나 적어진다면
-      밑에 while 가로 안 부등호 옆 숫자를 바꿔주어야 할 것이다.
-      숫자를 안 바꾸고 element 개수를 적을 수 없을까?
-      -> while(i < coworkers.length) 로 바꿔주면 된다!   
+      var coworkers = ['A','B','C','D']
+      // A,B,C,D를 배열에 넣는다.  
+      //  배열에서 각각의 항목들을 원소 : element
     </script>
-  </ul>
-</body>
+    <h2>Co workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while(i < 4){
+          document.write('<li>'+coworkers[i]+'</li>');
+          i = i + 1;
+        }
+      // document.write가 4번 실행되도록 앞 강의처럼 i 를 사용했다.
+      // 위 coworkers의 배열에 A,B,C,D도 순서를 가진다. : element값.
+      //  그 순서를 반복되는 반복문에서 i의 값을 사용할 수 있을 것이다.
+      //  i의 값은 반복이 될 때 마다 1씩 늘어날 것이기에.
+      // 하지만 여기서 문제가 하나 있다.
+      //   만약 coworkers의 element가 늘어나거나 적어진다면
+      //   밑에 while 가로 안 부등호 옆 숫자를 바꿔주어야 할 것이다.
+      //   숫자를 안 바꾸고 element 개수를 적을 수 없을까?
+      //   -> while(i < coworkers.length) 로 바꿔주면 된다!   
+      </script>
+    </ul>
+  </body>
 ```
+
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 23.배열과 반복문의 활용
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/hZdBDoYHd7E/0.jpg)](https://www.youtube.com/watch?v=hZdBDoYHd7E)|
+|:---:|
+|WEB2 JavaScript - 23.배열과 반복문의 활용|
+
+---
+
+앞서 했던 night, day 버튼으로 배경색을 바꿨을 때 하이퍼링크 색깔이 파랑색이라 잘 안보였다.
+night일 때 하이퍼링크 색을 더 밝혀보자 <br>
+
+저 코드를 웹상에서 키고 - 페이지검 - console창을 키자
+
+```javascript
+
+<console 창에서 쓴 걸 복사해온 것>
+
+document.querySelector('a')
+// 우리가 바꿔야할 부분이 하이퍼링크이기 때문에 a 부분을 찾아야한다.
+// querySelector를 이용해서 한번 찾아보자.
+결과 : <a href=​"index.html">​WEB​</a>​
+// 하이퍼링크가 총 ' 4 '개인데 하나밖에 나오지않는다.
+// 알아보니 querySelector는 ' a '에 해당하는 태그 첫 번째 것만 가져오는 특성이 있다고 한다.
+// 이 주문으로는 안될 것 같다.
+//구글에 javascript get element by css selector multiple 검색하면
+// querySelectorAll 이라는 게 나온다. 한번 해보자
+
+document.querySelectorAll('a')
+결과 : NodeList(4) [a, a, a, a]
+//[] 대 가로는 ' 배열 '이라는 말. 저 결과가 queryselectorall의 정확한 배열은 아니고 노드리스트를 출력하는 것이긴 하지만 배열이라고 생각하자.
+// 총 4개로 잘 나오는 걸 보니 이 주문을 쓰면 될 것 같다.
+var alist = document.querySelectorAll('a')
+// shift + enter를 누르면 출력되지 않고 줄바꿈이 된다.
+console.log(alist[0]); //console.log는 가로안에 있는 걸 출력하라는 말. 즉 alist 첫번째 부분을 출력하라는 말이다.
+결과 : <a href=​"index.html">​WEB​</a>​
+console.log(alist.length)
+결과 : 4
+// 배열답게 length로 개수도 출력된다.
+var alist = document.querySelectorAll('a');
+var i = 0;
+while (i < alist.length) {
+   console.log(alist[i]);
+   alist[i].style.color = 'powderblue';
+   i = i + 1;
+}
+결과
+VM7490:4 <a href=​"index.html">​WEB​</a>​
+VM7490:4 <a href=​"1.html">​HTML​</a>​
+VM7490:4 <a href=​"2.html">​CSS​</a>​
+VM7490:4 <a href=​"3.html">​JavaScript​</a>​
+4
+
+이 부분을 이용하여 html if 부분에 넣어서
+색을 바꾸면 될 것 같다.
+```
+
+---
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="BaWNmez" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 23강 ">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/BaWNmez">
+  생활코딩 23강 </a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
