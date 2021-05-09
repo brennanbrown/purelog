@@ -190,7 +190,6 @@ footer .pure-menu-link:hover {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 .content {
@@ -199,6 +198,7 @@ footer .pure-menu-link:hover {
 
 .post,
 .post-entry {
+  font-family: 'Nanum Gothic Coding', sans-serif;;
   padding-bottom: 2em;
 }
 
@@ -214,7 +214,6 @@ footer .pure-menu-link:hover {
 }
 
 .post-header p {
-  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 14px;
   margin-top: -10px;
 }
@@ -227,7 +226,7 @@ footer .pure-menu-link:hover {
 }
 
 .post-body blockquote p {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .post-title {

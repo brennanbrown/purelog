@@ -355,3 +355,18 @@ if 뒤에는 boolean 데이터 타입이 온다.
 input에 id값을 "night_day"로 주고 if와 else를 사용하여 value 값으로 조건문을 만들었다.
 
 ---
+
+<!-- <details>
+<summary>Click to toggle contents of `code`</summary>
+```
+CODE!
+```
+</details> -->
+
+
+~~~javascript
+function syntaxHighlight(code) {
+   var foo = 'Hello World';
+   var bar = 100;
+}
+~~~

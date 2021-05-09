@@ -24,6 +24,10 @@ paginate_path: "/:num/"
 
 markdown: kramdown
 
+higtlighter: rouge
+# # text highlighter로 rouge이용
+
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
