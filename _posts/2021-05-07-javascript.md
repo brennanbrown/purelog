@@ -753,3 +753,8 @@ VM7490:4 <a href=​"3.html">​JavaScript​</a>​
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+> 처음엔 저 var alist 를 이용해서
+그냥 alist.style.color라고 하면 되지않나? 라고 생각했는데
+결국엔 alist의 자리 순서값이 필요하다는 걸 깨달음.
