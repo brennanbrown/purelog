@@ -356,17 +356,243 @@ input에 id값을 "night_day"로 주고 if와 else를 사용하여 value 값으�
 
 ---
 
-<!-- <details>
-<summary>Click to toggle contents of `code`</summary>
-```
-CODE!
-```
-</details> -->
 
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/vwRkFRke7ls/0.jpg)](https://www.youtube.com/watch?v=vwRkFRke7ls)|
+|---|
+|WEB2 JavaScript - 18.리팩토링 중복의 제거|
 
-~~~javascript
-function syntaxHighlight(code) {
-   var foo = 'Hello World';
-   var bar = 100;
+### 리팩토링이란?<br/>
+우리가 코딩을 하고나면 코드가 비효율적인 면이 생기기 마련<br/>
+코드 자체를 효율적이게 만들어서 유지보수하는 것.
+
+<details>
+  <summary style="font-weight:bold; color:darkblue;"> 코드 펼치기(CLICK!)</summary>
+
+  <div markdown="1">
+
+  ```html
+    <input id="night_day" type="button" value="night" onclick="
+    if (document.querySelector('#night_day').value === 'night'){
+      document.querySelector('body').style.background = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#night_day').value = 'day';
+    } else {
+      document.querySelector('body').style.background = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'night';
+    }
+    ">
+    이 부분을 복사하여 페이지 맨 밑에도 놔두고 싶다면
+    <input id="night_day2" type="button" value="night" onclick="
+    if (document.querySelector('#night_day2').value === 'night'){
+      document.querySelector('body').style.background = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#night_day2').value = 'day';
+    } else {
+      document.querySelector('body').style.background = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day2').value = 'night';
+    }
+    ">
+    id값을 위와 다르게 주어야한다.
+    만약 10개를 복사해야한다면 id값을 10번이나 다르게 주어야할 것이다.
+
+    그래서.
+    <input type="button" value="night" onclick="
+    if (this.value === 'night'){
+      document.querySelector('body').style.background = 'black';
+      document.querySelector('body').style.color = 'white';
+      this.value = 'day';
+    } else {
+      document.querySelector('body').style.background = 'white';
+      document.querySelector('body').style.color = 'black';
+      this.value = 'night';
+    }
+    ">
+    document.querySelector('#night_day2') 를 this로 바꿔주고
+    input의 id값을 없애주면 된다
+  ```
+  </div>
+</details>
+
+<br>
+코딩 잘하는 법 : 중복을 끝까지 따라가서 제거하라!!
+
+```html
+<input id="night_day" type="button" value="night" onclick="
+if (document.querySelector('#night_day').value === 'night'){
+  document.querySelector('body').style.background = 'black';
+  document.querySelector('body').style.color = 'white';
+  document.querySelector('#night_day').value = 'day';
+} else {
+  document.querySelector('body').style.background = 'white';
+  document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = 'night';
 }
-~~~
+">
+
+<!-- 저 위 document.querySelector('body') 부분도 4번 중복된다.
+그렇다면
+if 밑에다가 이렇게 써보자
+var target = document.querySelector('body');  -->
+
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if (this.value === 'night'){
+  target.style.background = 'black';
+  target.style.color = 'white';
+  this.value = 'day';
+} else {
+  target.style.background = 'white';
+  target.style.color = 'black';
+  this.value = 'night';
+}
+">
+```
+<br/>
+
+---
+<br/>
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/aBJzzhQ6y-o/0.jpg)](https://www.youtube.com/watch?v=aBJzzhQ6y-o)|
+|---|
+|WEB2 JavaScript - 20.배열|
+
+### Syntax란?
+1. 언어- 구문론, 통사론
+2. (컴퓨터 언어의) 문법을 뜻한다.
+
+자바스크립트에서 배열은
+__[__ 로 시작해서 __]__ 로 끝난다. (대가로)
+
+<https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array>
+array의 유형은 굉장히 많다.
+
+```html
+<body>
+  <h1>Array</h1>
+  <h2>Syntax</h2>
+  <script>
+    var friends = ["A", "B"];
+    // // friends 라는 변수에
+    // A, B배열이라는 새로운 데이터타입이 담겼다.
+    // // 데이터타입에 freinds라는 이름을 붙인 것이라고도
+    // 할 수 있겠다.
+    document.write(friends.length);
+    // 변수 개수가 A,B 두개니까 결과 : 2
+    friends.push('C');
+    // push : 변수를 추가하는 것.
+    document.write(friends.length);
+    // 결과 : 3
+  </script>
+  <h2>get</h2>
+  <script>
+    document.write(friends[0]);
+    // friends에 첫번째가 무엇이냐. 첫번째 = 0번째
+    // 결과 : A
+    document.write(friends[1]);
+    // 결과 : B
+  </script>
+```
+<br/>
+
+---
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/ZupPmuWPSdE/0.jpg)](https://www.youtube.com/watch?v=ZupPmuWPSdE)|
+|---|
+|WEB2 JavaScript - 21.반복문|
+
+```html
+<body>
+  <h1>Loop</h1>
+  <ul>
+  <script>
+// 1.
+    document.write('<li>1</li>');
+    document.write('<li>2</li>');
+    document.write('<li>3</li>');
+    document.write('<li>4</li>');
+    // 2, 3을 반복해보자
+// 2.
+    document.write('<li>1</li>');
+    while(true){
+    // while:반복문의 기본 저 가로사이에는 true or false
+    // while이 true인 동안에는 while이 계속 반복적으로 실행된다.
+    //  언제까지? while이 false가 될 때 까지.
+
+    // 반복문에는 이 반복문을 언제 종료할 것인가가 필요하다.
+    document.write('<li>2</li>');
+    document.write('<li>3</li>');
+    }
+    document.write('<li>4</li>');
+// 3.
+//  반복문 종료를 위해서 변수를 추가한다.
+
+    document.write('<li>1</li>');
+    var i = 0 ;
+    // 습관적으로 i 라는 것에 이런 역할을 시킨다
+    while(i < 2 ){
+      document.write('<li>2</li>');
+      document.write('<li>3</li>');
+      i = i + 1 ;
+    // 변수를 이용하여 반복문의 종료를 부르자.
+    // 2, 3번의 반복이 3번 반복되면 i 의 값이 2가 될것이다.
+    //  while가로 안에 i < 3을 써주자.
+    }
+    document.write('<li>4</li>');
+  </script>
+  </ul>
+</body>
+```
+---
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/BjkfkKdlvLo/0.jpg)](https://www.youtube.com/watch?v=BjkfkKdlvLo)|
+|---|
+|WEB2 JavaScript - 22.배열과 반복문|
+
+## <span style="color:red"> 중요 </span>
+배열과 변수를 사용하여 변수안의 값을 리스트화 시키기
+
+
+```html
+<body>
+  <h1>Loop & Array</h1>
+  <h2>Co workers</h2>
+  <ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+  </ul>
+
+  A,B,C,D가 아주 여러개라면 리스트화 시키기가 힘들 것이다.
+  서로 연관된 데이터들을 담는 방법 : 배열
+  배열에 담겨있는 데이터를 순차적으로 꺼내는 방법 : 반복
+
+  <h1>Loop & Array</h1>
+  <script>
+    var coworkers = ['A','B','C','D']
+    // A,B,C,D를 배열에 넣는다.  
+    //  배열에서 각각의 항목들을 원소 : element
+  </script>
+  <h2>Co workers</h2>
+  <ul>
+    <script>
+      var i = 0;
+      while(i < 4){
+        document.write('<li>'+coworkers[i]+'</li>');
+        i = i + 1;
+      }
+    // document.write가 4번 실행되도록 앞 강의처럼 i 를 사용했다.
+    // 위 coworkers의 배열에 A,B,C,D도 순서를 가진다. : element값.
+    //  그 순서를 반복되는 반복문에서 i의 값을 사용할 수 있을 것이다.
+    //  i의 값은 반복이 될 때 마다 1씩 늘어날 것이기에.
+    하지만 여기서 문제가 하나 있다.
+      만약 coworkers의 element가 늘어나거나 적어진다면
+      밑에 while 가로 안 부등호 옆 숫자를 바꿔주어야 할 것이다.
+      숫자를 안 바꾸고 element 개수를 적을 수 없을까?
+      -> while(i < coworkers.length) 로 바꿔주면 된다!   
+    </script>
+  </ul>
+</body>
+```

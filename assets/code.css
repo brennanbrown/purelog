@@ -10,15 +10,16 @@
   padding: 15px;
   background-color: #1f1f1f;
   border-radius: 5px;
-  font-size: 14px;
   line-height: 2em;
 }
 
 .highlight code {
+  max-width: 200px;
   font-family: 'Nanum Gothic Coding', sans-serif;
   font-weight: 500;
-
+  font-size: 14px;
 }
+
 .highlight,
 .highlight .w {
     color: #cccccc;
