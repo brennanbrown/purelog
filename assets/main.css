@@ -50,9 +50,10 @@ mark {
 }
 
 blockquote {
-  border-left: 2px #aaa solid;
+  border-left: 15px #FFC900 solid;
+  background-color: #F1F1F1;
   padding-left: 7px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 hr {

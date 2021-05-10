@@ -758,3 +758,553 @@ VM7490:4 <a href=​"3.html">​JavaScript​</a>​
 > 처음엔 저 var alist 를 이용해서
 그냥 alist.style.color라고 하면 되지않나? 라고 생각했는데
 결국엔 alist의 자리 순서값이 필요하다는 걸 깨달음.
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 25.함수
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/IOuePUzLdnQ/0.jpg)](https://www.youtube.com/watch?v=IOuePUzLdnQ)|
+|:---:|
+|WEB2 JavaScript - 25.함수|
+
+## 함수
+- 영어로 : function
+- 객체를 배우면 : method라고 부르는 경우도 있다. <br>
+
+연속적인 부분을 반복시키려면 __반복문__ 을 쓰면 된다.
+<span style="color:red">하지만</span> 반복시키려는 부분이 <u>연속적이지 않다면</u>? <br>
+: <u>함수</u>를 사용하자.
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="ExWjOzp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 25강">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/ExWjOzp">
+  생활코딩 25강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 26.함수 : 매개변수와 인자
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/MXf9UqMXuGM/0.jpg)](https://www.youtube.com/watch?v=MXf9UqMXuGM)|
+|:---:|
+|WEB2 JavaScript - 26.함수 : 매개변수와 인자|
+
+함수는 __입력__ 과 __출력__ 으로 이뤄져있다. <br>
+입력
+- parameter : 매개변수
+- argument : 인자
+
+출력
+- return <br>
+
+---
+
+```html
+<h2>Parameter & Argument</h2>
+<script>
+  function onePlusOne(){
+    document.write(1+1+'<br>');
+  }
+  onePlusOne();
+  function sum(left, right){
+    document.write(left+right+'<br>');
+  }
+  sum(2,3); //5
+  sum(3,4); //7
+// sum 옆 함수로 전달하는 2,3이라는 값을 : argument :인자
+// function sum 옆 left, right 즉 위 2, 3 이라는 값을 받아서
+//  함수 안으로 매개해주는 변수들을 : parameter : 매개변수 라고 한다.
+
+</script>
+```
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 27.함수 (리턴)
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/6MzCHO8M3Uc/0.jpg)](https://www.youtube.com/watch?v=6MzCHO8M3Uc)|
+|:---:|
+|WEB2 JavaScript - 27.함수 (리턴)|
+
+<br>
+<br>
+
+### 표현식 : expression이 무엇인가?<br>
+1+1 <br>
+: 2 <br>
+-> 1+1은 2에 대한 __표현식__ 이다.
+
+```html
+<h2>Return</h2>
+<script>
+  function sum2(left, right){
+    return left+right;
+  }
+  document.write(sum2(2,3)+'<br>'); //이게 숫자 5에 대한 표현식이 되게 하고싶다.
+  document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+  document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+
+
+---------------------------------------------------------------------
+  function sum(left, right){
+    document.write(left+right);
+  }
+  이란 함수가 만들어져 있다고 한다면 sum이란 함수는
+  'left값과 right를 더한 값을 출력'하는 기능을 가진 함수입니다.
+  따라서 sum()함수를 호출하면 5가 출력되지만,
+  sum()이란 함수 자체가 5란 값을 가지고 있는 것은 아닙니다.
+  그래서 sum()을 이용한 연산, 예를들어 sum(3,4)+6 이란 연산을 수행한다면
+  7+6의 연산결과가 나오는게 아니라 7과 에러코드 하나가 발생합니다.
+  sum()이란 함수를 이용하여 연산을 하고 싶을 경우에는
+  sum()함수 안에 return값을 부여해 주어야 합니다.
+</script>
+```
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 29.객체 예고
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/6lJEbSYA4B4/0.jpg)](https://www.youtube.com/watch?v=6lJEbSYA4B4)|
+|:---:|
+|WEB2 JavaScript - 29.객체 예고|
+
+객체 : object <br>
+함수라는 것 위에서 객체라는 것이 존재하는 것
+
+<details>
+  <summary> 23강 코드 자료 보기 </summary>
+
+  ```html
+
+    </head>
+    <body>
+      <h1><a href="index.html">WEB</a></h1>
+        <input id="night_day" type="button" value="night" onclick="
+          var target = document.querySelector('body');
+          if(this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+              alist[i].style.color = 'powderblue';
+              i = i + 1;
+            }
+          } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+              alist[i].style.color = 'blue';
+              i = i + 1;
+            }
+          }
+        ">
+        <ol>
+          <li><a href="1.html">HTML</a></li>
+          <li><a href="2.html">CSS</a></li>
+          <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.
+        </p>
+    </body>
+  </html>
+  ```
+
+</details>
+
+## 함수를 이용해서 코드가 중복되지 않도록 정리해보자.
+
+### 1. 위 코드에 중복된 코드를 고쳐보자. <br>
+
+1. input 밑 부분을 잘라내서 `head`안에 <br>
+
+  `script - function nightDayHandler(){}` 을 만들고
+  이 밑에 넣어보자.
+
+2. `nightDayHandler();`를 `body`부분 `onclick` 안에 넣어주자.
+<br>
+
+<details>
+  <summary>code보기</summary>
+
+
+```html
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    function nightDayHandler(){
+      var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'blue';
+          i = i + 1;
+        }
+      }
+    }
+    </script>
+
+  </head>
+
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+      <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler();
+      ">
+nightDayHandler를 저 onclick안에 넣어주자
+
+  ```
+
+</details>
+<br>
+사이트를 실행시키면 night를 눌러도 버튼이 day로 변하지 않음 <br>
+
+__why?__
+: 원래 onclick안에서 있던 부분의 `this` 는 `onclick`이 속해있는 태그를 가리키는 것인데 head안으로 독립을 시켜버렸기 때문에 this의 연결이 깨진 것. <br>
+
+수정하기 위해서<br>
+`onclick` 안의 `nightDayHandler`의 가로안에 `(this)`라고 넣어주고, head 안의 `function nightDayHandler`의 가로안에는 `(self)` 라고 넣어주자. 그리고 `if` 밑의 `this`라고 되어있는 부분들을 모두 `self`로 바꿔주자.<br>
+-> 잘 동작하게 된다. <br>
+
+### 2. 이제 하이퍼링크 색상을 고친 부분이 또 중복되기 때문에 그 부분을 고쳐보자.
+<br>
+
+1. `head` 부분 `script` 에 함수를 하나 더 만든다.
+  - `function LinkssetColor(color){}`
+2. 그 부분에 `body` 부분에 하이퍼링크 글씨색 변경부분을 가져온다.
+
+```
+function LinkssetColor(color){
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = color;
+    i = i + 1;
+  }
+}
+```
+
+<details>
+<summary>code보기</summary>
+
+```HTML
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+  function LinkssetColor(color){
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = color;
+      i = i + 1;
+    }
+  }
+// function setColor(color)를 만들고
+  // 밑에 회색처리된 부분을 가져온다.
+    // 'powderblue'라고 적힌 부분을 color로 바꾼다.
+  function nightDayHandler(self){
+    var target = document.querySelector('body');
+    if(self.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'day'
+      LinkssetColor('powderblue');
+      // 만든 함수 setColor()를 가져오고 가로에 원하는
+      // 색을 적는다.
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = 'night';
+      // var alist = document.querySelectorAll('a');
+      // var i = 0;
+      // while(i < alist.length){
+      //   alist[i].style.color = 'blue';
+      //   i = i + 1;
+      // }
+      LinkssetColor('blue');
+      // 만든 함수 setColor()를 가져오고 가로에 원하는
+      // 색을 적는다.
+      }
+    }
+
+  </script>
+
+</head>
+```
+
+</details>
+
+### 3. 본문의 글자색을 바꾼 부분도 함수로 묶어보자.
+
+`function BodysetColor(color)`를 새로 만들고 안에
+`target.style.color = color;` 를 넣자. 넣고
+밑에 if 안 `target.style.color = 'white'` 를 지우고
+`BodysetColor('white')` 로 바꾸자. <br>
+-> 그럼 작동이 되지 않는다
+__why?__
+`target` 자체가 `function BodysetColor(color)` 밑에 있는 함수안의 변수에 설정되어 있기 때문이다. 그렇게 때문에 밑에 `var target = document.querySelector('body');` 이렇게 되어 있는 부분인 target 부분 즉 `document.querySelector('body')`을 `target` 대신에 써주자.
+
+```
+function BodysetColor(color){
+  document.querySelector('body').style.color = color;
+}
+function nightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    BodysetColor('white');
+    self.value = 'day'
+    LinkssetColor('powderblue');
+```
+
+### 4. 본문의 배경색도 함수로 묶어보자
+<br>
+3번과 같은 방법으로 묶어주었다.
+
+#### 서로 연관된 함수와 서로 연관된 변수들을 그루핑해서 정리정돈하는 수납상자로써 __객체__ 라는 것이 존재한다.
+
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 30.객체 쓰기와 읽기
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/2j04s1erzTs/0.jpg)](https://www.youtube.com/watch?v=2j04s1erzTs)|
+|:---:|
+|WEB2 JavaScript - 30.객체 쓰기와 읽기|
+
+<br>
+
+배열 : 문서에 따라 정보를 정리정돈한다
+정보를 담는 그릇 이면서 정보가 순서대로 저장된다는 특징
+
+순서없이 저장되는 게 있지않을까? <br>
+: __객체__
+
+`var cowerkers = {}`
+  cowerkers라는 객체를 만든다는 말
+
+> 객체는 { }<br>
+> 배열은 [ ]
+
+```html
+<script>
+  var coworkers = {
+    "programmer":"A",
+    "designer":"B"
+  };
+  document.write("programmer : "+coworkers.programmer+"<br>");
+  document.write("designer : "+coworkers.designer+"<br>");
+  coworkers.bookkeeper = "C"; //C라는 북키퍼를 추가하겠다.
+  document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+  coworkers["data scientist"] = "D"; //이름에는 공백을 넣을 수 없다.
+  //[ ] 대가로를 점 빼고 쓴다.
+  document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+</script>
+```
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 31.객체와 반복문
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/GIB8O6R3wko/0.jpg)](https://www.youtube.com/watch?v=GIB8O6R3wko)|
+|:---:|
+|WEB2 JavaScript - 31.객체와 반복문|
+<br>
+
+구글에 javascript object iterate 검색<br>
+for in 으로 객체의 데이터를 가져올 수 있다.
+
+```html
+<h2>Iterate</h2>
+<script>
+  for(var key in coworkers) {
+    document.write(key+'<br>');
+  }
+  // coworkers안의 key값들을 가져오는 반복문
+  // key값 : 저 위에 programmer, designer 이것들.
+  // 배열에서는 순서대로 정돈되어 있기 때문에 index라는 표현을 쓴다.
+  for(var key in coworkers) {
+    document.write(key+ ' : ' +coworkers[key]+'<br>');
+  }
+</script>
+```
+
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+
+# WEB2 JavaScript - 32.객체프로퍼티와 메소드
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/mjzx1qbyPwU/0.jpg)](https://www.youtube.com/watch?v=mjzx1qbyPwU)|
+|:---:|
+|WEB2 JavaScript - 32.객체프로퍼티와 메소드|
+
+<br>
+객체에는 데이터를 담을 수 있다.<br>
+배열, 숫자.. 등등<br>
+함수도 담을 수 있다.<br><br>
+
+객체에 소속된 함수<br>
+: method <br>
+객체에 소속된 변수<br>
+: property <br>
+
+```HTML
+<h2>Property & Method</h2>
+<script>
+  coworkers.showAll = function(){
+    for(var key in coworkers) {
+      document.write(key+ ' : ' +coworkers[key]+'<br>');
+    }
+    // 이렇게 하면 coworkers라는 객체의 이름이 변했을 경우 다시 입력해주어야 하거나
+    // 다른 상황이 생길 수 있기 때문에 저 함수가 소속되어있는 객체를 가리키는
+    // 약속된 기호가 있다 : this
+    for(var key in this) {
+      document.write(key+ ' : ' +this[key]+'<br>');
+    }
+    // 위와 똑같이 나오게된다.
+    // coworkers라는 이름이 바껴도 this는 영향을 받지 않는다.
+
+  }
+  coworkers.showAll();
+  // function showAll(){} 과 똑같은 표현
+  // var showAll = function(){} 과도 똑같은 표현
+
+</script>
+```
+
+<br>
+<br>
+
+------
+
+<br>
+<br>
+# WEB2 JavaScript - 33.객체의 활용
+
+|[![생활코딩-자바스크립트](http://img.youtube.com/vi/JNaX6EG9-FI/0.jpg)](https://www.youtube.com/watch?v=JNaX6EG9-FI)|
+|:---:|
+|WEB2 JavaScript - 33.객체의 활용|
+
+<br>
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="YzZyXrx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 29강">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/YzZyXrx">
+  생활코딩 29강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<br>
+29강에서는 함수를 사용하여 중복된 부분을 정리해보았다. <br>
+이번 시간에는 객체를 사용하여 정리해보자. <br>
+
+- BodysetBackgroundColor
+- BodysetColor <br>
+처럼 앞에 body를 달아서 정리해줬었는데 body를 객체로 만들어서 정리해보자.
+
+```html
+<script>
+function BodysetColor(color){
+  document.querySelector('body').style.color = color;
+}
+function BodysetBackgroundColor(color){
+  document.querySelector('body').style.backgroundColor = color;
+}
+```
+이 부분을
+
+```html
+<script>
+
+var Body = {
+  setColor:function (color){
+    document.querySelector('body').style.color = color;
+  },
+  setBackgroundColor:function (color){
+    document.querySelector('body').style.backgroundColor = color;
+  }
+}
+```
+
+이렇게 var를 이용하여 Body를 객체로 만들어줬다.
+
+<br>
+최종 결과
+
+---
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="YzZyXJY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 33강">
+  <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/YzZyXJY">
+  생활코딩 33강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
