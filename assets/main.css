@@ -17,6 +17,8 @@ li {
   font-family: "Lora", serif;
 } */
 
+
+
 a {
   text-decoration: none;
   color: #6652FF;
@@ -228,6 +230,11 @@ footer .pure-menu-link:hover {
 
 .post-body blockquote p {
   font-size: 18px;
+}
+
+.post-body p code {
+  background-color: #EFEFEF;
+  border-radius: 2px;
 }
 
 .post-title {

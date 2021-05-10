@@ -8,45 +8,6 @@ tags:
   - Jekyll
 ---
 
-- [WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그](#web2-javascript---3html--js-------script---)
-- [WEB2 JavaScript - 4.HTML과 JS의 만남 : 이벤트](#web2-javascript---4html--js----------)
-  * [검색하기](#----)
-- [WEB2 JavaScript - 5.HTML과 JS의 만남 (콘솔)](#web2-javascript---5html--js---------)
-- [WEB2 JavaScript - 6.데이터타입 - 문자열과 숫자](#web2-javascript---6---------------)
-  * [이번 시간엔 목록 중 5번째인 Number를 다뤄볼 것임](#------------5----number--------)
-- [WEB2 JavaScript - 7.변수와 대입 연산자](#web2-javascript---7----------)
-- [WEB2 JavaScript - 8.웹브라우저 제어](#web2-javascript---8--------)
-- [WEB2 JavaScript - 13.프로그램,프로그래밍,프로그래머](#web2-javascript---13----------------)
-- [WEB2 JavaScript - 15. 비교 연산자와 블리언](#web2-javascript---15------------)
-- [WEB2 JavaScript - 17.조건문의 활용](#web2-javascript---17-------)
-- [WEB2 JavaScript - 18.리팩토링 중복의 제거](#web2-javascript---18-----------)
-    + [리팩토링이란?<br/>](#--------br--)
-- [WEB2 JavaScript - 20.배열](#web2-javascript---20--)
-    + [Syntax란?](#syntax--)
-- [WEB2 JavaScript - 21.반복문](#web2-javascript---21---)
-- [WEB2 JavaScript - 22.배열과 반복문](#web2-javascript---22-------)
-  * [<span style="color:red"> 중요 </span>](#-span-style--color-red--------span-)
-- [WEB2 JavaScript - 23.배열과 반복문의 활용](#web2-javascript---23-----------)
-- [WEB2 JavaScript - 25.함수](#web2-javascript---25--)
-  * [함수](#--)
-- [WEB2 JavaScript - 26.함수 : 매개변수와 인자](#web2-javascript---26-------------)
-- [WEB2 JavaScript - 27.함수 (리턴)](#web2-javascript---27-------)
-    + [표현식 : expression이 무엇인가?<br>](#------expression--------br-)
-- [WEB2 JavaScript - 29.객체 예고](#web2-javascript---29-----)
-  * [함수를 이용해서 코드가 중복되지 않도록 정리해보자.](#---------------------------)
-    + [1. 위 코드에 중복된 코드를 고쳐보자. <br>](#1---------------------br-)
-    + [2. 이제 하이퍼링크 색상을 고친 부분이 또 중복되기 때문에 그 부분을 고쳐보자.](#2------------------------------------------)
-    + [3. 본문의 글자색을 바꾼 부분도 함수로 묶어보자.](#3-------------------------)
-    + [4. 본문의 배경색도 함수로 묶어보자](#4------------------)
-- [WEB2 JavaScript - 30.객체 쓰기와 읽기](#web2-javascript---30---------)
-- [WEB2 JavaScript - 31.객체와 반복문](#web2-javascript---31-------)
-- [WEB2 JavaScript - 32.객체프로퍼티와 메소드](#web2-javascript---32-----------)
-- [WEB2 JavaScript - 33.객체의 활용](#web2-javascript---33------)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
-
 
 
 # WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그
@@ -90,7 +51,11 @@ javascrip를 사용하려면 html의 body사이에 스크립트 선언을 해주
 
   <br>
   <br>
-# WEB2 JavaScript - 4.HTML과 JS의 만남 : 이벤트
+
+# 4.HTML과 JS의 만남 : 이벤트
+
+# 1. 목차1번 (Apple)
+
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/-hdtrReY9Zw/0.jpg)](https://www.youtube.com/watch?v=-hdtrReY9Zw)|
 |:---:|
