@@ -8,6 +8,47 @@ tags:
   - Jekyll
 ---
 
+- [WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그](#web2-javascript---3html--js-------script---)
+- [WEB2 JavaScript - 4.HTML과 JS의 만남 : 이벤트](#web2-javascript---4html--js----------)
+  * [검색하기](#----)
+- [WEB2 JavaScript - 5.HTML과 JS의 만남 (콘솔)](#web2-javascript---5html--js---------)
+- [WEB2 JavaScript - 6.데이터타입 - 문자열과 숫자](#web2-javascript---6---------------)
+  * [이번 시간엔 목록 중 5번째인 Number를 다뤄볼 것임](#------------5----number--------)
+- [WEB2 JavaScript - 7.변수와 대입 연산자](#web2-javascript---7----------)
+- [WEB2 JavaScript - 8.웹브라우저 제어](#web2-javascript---8--------)
+- [WEB2 JavaScript - 13.프로그램,프로그래밍,프로그래머](#web2-javascript---13----------------)
+- [WEB2 JavaScript - 15. 비교 연산자와 블리언](#web2-javascript---15------------)
+- [WEB2 JavaScript - 17.조건문의 활용](#web2-javascript---17-------)
+- [WEB2 JavaScript - 18.리팩토링 중복의 제거](#web2-javascript---18-----------)
+    + [리팩토링이란?<br/>](#--------br--)
+- [WEB2 JavaScript - 20.배열](#web2-javascript---20--)
+    + [Syntax란?](#syntax--)
+- [WEB2 JavaScript - 21.반복문](#web2-javascript---21---)
+- [WEB2 JavaScript - 22.배열과 반복문](#web2-javascript---22-------)
+  * [<span style="color:red"> 중요 </span>](#-span-style--color-red--------span-)
+- [WEB2 JavaScript - 23.배열과 반복문의 활용](#web2-javascript---23-----------)
+- [WEB2 JavaScript - 25.함수](#web2-javascript---25--)
+  * [함수](#--)
+- [WEB2 JavaScript - 26.함수 : 매개변수와 인자](#web2-javascript---26-------------)
+- [WEB2 JavaScript - 27.함수 (리턴)](#web2-javascript---27-------)
+    + [표현식 : expression이 무엇인가?<br>](#------expression--------br-)
+- [WEB2 JavaScript - 29.객체 예고](#web2-javascript---29-----)
+  * [함수를 이용해서 코드가 중복되지 않도록 정리해보자.](#---------------------------)
+    + [1. 위 코드에 중복된 코드를 고쳐보자. <br>](#1---------------------br-)
+    + [2. 이제 하이퍼링크 색상을 고친 부분이 또 중복되기 때문에 그 부분을 고쳐보자.](#2------------------------------------------)
+    + [3. 본문의 글자색을 바꾼 부분도 함수로 묶어보자.](#3-------------------------)
+    + [4. 본문의 배경색도 함수로 묶어보자](#4------------------)
+- [WEB2 JavaScript - 30.객체 쓰기와 읽기](#web2-javascript---30---------)
+- [WEB2 JavaScript - 31.객체와 반복문](#web2-javascript---31-------)
+- [WEB2 JavaScript - 32.객체프로퍼티와 메소드](#web2-javascript---32-----------)
+- [WEB2 JavaScript - 33.객체의 활용](#web2-javascript---33------)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
+
+
 # WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그
 
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/Ru5zGHkOgic/0.jpg)](https://www.youtube.com/watch?v=Ru5zGHkOgic)|
@@ -897,69 +938,70 @@ VM7490:4 <a href=​"3.html">​JavaScript​</a>​
 함수라는 것 위에서 객체라는 것이 존재하는 것
 
 <details>
-  <summary> 23강 코드 자료 보기 </summary>
+  <summary style="font-weight:bold; color:darkblue;"> 23강 코드 자료 보기</summary>
 
-  ```html
+  <div markdown="1">
 
-    </head>
-    <body>
-      <h1><a href="index.html">WEB</a></h1>
-        <input id="night_day" type="button" value="night" onclick="
-          var target = document.querySelector('body');
-          if(this.value === 'night'){
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';
-            this.value = 'day';
+```html
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+      var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
 
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-              alist[i].style.color = 'powderblue';
-              i = i + 1;
-            }
-          } else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            this.value = 'night';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
 
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-              alist[i].style.color = 'blue';
-              i = i + 1;
-            }
-          }
-        ">
-        <ol>
-          <li><a href="1.html">HTML</a></li>
-          <li><a href="2.html">CSS</a></li>
-          <li><a href="3.html">JavaScript</a></li>
-        </ol>
-        <h2>JavaScript</h2>
-        <p>
-          JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.
-        </p>
-    </body>
-  </html>
-  ```
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'blue';
+          i = i + 1;
+        }
+      }
+    ">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <h2>JavaScript</h2>
+    <p>
+      JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.
+    </p>
+</body>
+</html>
 
+```
+  </div>
 </details>
 
 ## 함수를 이용해서 코드가 중복되지 않도록 정리해보자.
 
 ### 1. 위 코드에 중복된 코드를 고쳐보자. <br>
 
-1. input 밑 부분을 잘라내서 `head`안에 <br>
+  1. input 밑 부분을 잘라내서 `head`안에 <br>`script - function nightDayHandler(){}` 을 만들고 이 밑에 넣어보자.
 
-  `script - function nightDayHandler(){}` 을 만들고
-  이 밑에 넣어보자.
 
-2. `nightDayHandler();`를 `body`부분 `onclick` 안에 넣어주자.
-<br>
+  2. `nightDayHandler();`를 `body`부분 `onclick` 안에 넣어주자.
+
 
 <details>
-  <summary>code보기</summary>
+  <summary style="font-weight:bold; color:darkblue;">code보기</summary>
 
+  <div markdown="1">
 
 ```html
   <head>
@@ -1004,21 +1046,21 @@ VM7490:4 <a href=​"3.html">​JavaScript​</a>​
       ">
 nightDayHandler를 저 onclick안에 넣어주자
 
-  ```
-
+```
+  </div>
 </details>
-<br>
+
 사이트를 실행시키면 night를 눌러도 버튼이 day로 변하지 않음 <br>
 
-__why?__
-: 원래 onclick안에서 있던 부분의 `this` 는 `onclick`이 속해있는 태그를 가리키는 것인데 head안으로 독립을 시켜버렸기 때문에 this의 연결이 깨진 것. <br>
+__why?__<br>
+
+: 원래 `onclick` 안에서 있던 부분의 `this` 는 `onclick`이 속해있는 태그를 가리키는 것인데 `head` 안으로 독립을 시켜버렸기 때문에 `this` 의 연결이 깨진 것. <br>
 
 수정하기 위해서<br>
-`onclick` 안의 `nightDayHandler`의 가로안에 `(this)`라고 넣어주고, head 안의 `function nightDayHandler`의 가로안에는 `(self)` 라고 넣어주자. 그리고 `if` 밑의 `this`라고 되어있는 부분들을 모두 `self`로 바꿔주자.<br>
+`onclick` 안의 `nightDayHandler`의 가로안에 `(this)`라고 넣어주고, `head` 안의 `function nightDayHandler`의 가로안에는 `(self)` 라고 넣어주자. 그리고 `if` 밑의 `this`라고 되어있는 부분들을 모두 `self`로 바꿔주자.<br>
 -> 잘 동작하게 된다. <br>
 
 ### 2. 이제 하이퍼링크 색상을 고친 부분이 또 중복되기 때문에 그 부분을 고쳐보자.
-<br>
 
 1. `head` 부분 `script` 에 함수를 하나 더 만든다.
   - `function LinkssetColor(color){}`
@@ -1036,9 +1078,12 @@ function LinkssetColor(color){
 ```
 
 <details>
-<summary>code보기</summary>
+  <summary style="font-weight:bold; color:darkblue;">code보기</summary>
 
-```HTML
+  <div markdown="1">
+
+
+```html
 <head>
   <meta charset="utf-8">
   <title></title>
@@ -1082,18 +1127,21 @@ function LinkssetColor(color){
   </script>
 
 </head>
+
 ```
 
+  </div>
 </details>
 
 ### 3. 본문의 글자색을 바꾼 부분도 함수로 묶어보자.
 
 `function BodysetColor(color)`를 새로 만들고 안에
-`target.style.color = color;` 를 넣자. 넣고
-밑에 if 안 `target.style.color = 'white'` 를 지우고
+`target.style.color = color;` 를 넣자.  
+넣고 밑에 if 안 `target.style.color = 'white'` 를 지우고
 `BodysetColor('white')` 로 바꾸자. <br>
--> 그럼 작동이 되지 않는다
-__why?__
+-> 그럼 작동이 되지 않는다  
+
+__why?__<br>
 `target` 자체가 `function BodysetColor(color)` 밑에 있는 함수안의 변수에 설정되어 있기 때문이다. 그렇게 때문에 밑에 `var target = document.querySelector('body');` 이렇게 되어 있는 부분인 target 부분 즉 `document.querySelector('body')`을 `target` 대신에 써주자.
 
 ```
@@ -1110,10 +1158,8 @@ function nightDayHandler(self){
 ```
 
 ### 4. 본문의 배경색도 함수로 묶어보자
-<br>
-3번과 같은 방법으로 묶어주었다.
-
-#### 서로 연관된 함수와 서로 연관된 변수들을 그루핑해서 정리정돈하는 수납상자로써 __객체__ 라는 것이 존재한다.
+3번과 같은 방법으로 묶어주었다.  
+서로 연관된 함수와 서로 연관된 변수들을 그루핑해서 정리정돈하는 수납상자로써 __객체__ 라는 것이 존재한다.
 
 
 <br>
@@ -1132,11 +1178,11 @@ function nightDayHandler(self){
 
 <br>
 
-배열 : 문서에 따라 정보를 정리정돈한다
+배열 : 문서에 따라 정보를 정리정돈한다  
 정보를 담는 그릇 이면서 정보가 순서대로 저장된다는 특징
 
 순서없이 저장되는 게 있지않을까? <br>
-: __객체__
+-> __객체__
 
 `var cowerkers = {}`
   cowerkers라는 객체를 만든다는 말
@@ -1173,7 +1219,6 @@ function nightDayHandler(self){
 |[![생활코딩-자바스크립트](http://img.youtube.com/vi/GIB8O6R3wko/0.jpg)](https://www.youtube.com/watch?v=GIB8O6R3wko)|
 |:---:|
 |WEB2 JavaScript - 31.객체와 반복문|
-<br>
 
 구글에 javascript object iterate 검색<br>
 for in 으로 객체의 데이터를 가져올 수 있다.
@@ -1208,17 +1253,17 @@ for in 으로 객체의 데이터를 가져올 수 있다.
 |:---:|
 |WEB2 JavaScript - 32.객체프로퍼티와 메소드|
 
-<br>
+
 객체에는 데이터를 담을 수 있다.<br>
 배열, 숫자.. 등등<br>
 함수도 담을 수 있다.<br><br>
 
 객체에 소속된 함수<br>
-: method <br>
+-> method <br>
 객체에 소속된 변수<br>
-: property <br>
+-> property <br>
 
-```HTML
+```html
 <h2>Property & Method</h2>
 <script>
   coworkers.showAll = function(){
@@ -1256,7 +1301,6 @@ for in 으로 객체의 데이터를 가져올 수 있다.
 |WEB2 JavaScript - 33.객체의 활용|
 
 <br>
-
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="hyunjung21ef" data-slug-hash="YzZyXrx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="생활코딩 29강">
   <span>See the Pen <a href="https://codepen.io/hyunjung21ef/pen/YzZyXrx">
   생활코딩 29강</a> by hyunjungim (<a href="https://codepen.io/hyunjung21ef">@hyunjung21ef</a>)
@@ -1264,7 +1308,7 @@ for in 으로 객체의 데이터를 가져올 수 있다.
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-<br>
+
 29강에서는 함수를 사용하여 중복된 부분을 정리해보았다. <br>
 이번 시간에는 객체를 사용하여 정리해보자. <br>
 
@@ -1285,7 +1329,6 @@ function BodysetBackgroundColor(color){
 
 ```html
 <script>
-
 var Body = {
   setColor:function (color){
     document.querySelector('body').style.color = color;
