@@ -17,7 +17,7 @@ tags:
 |WEB2 JavaScript - 3.HTML과 JS의 만남 : script 태그|
 
 
-javascrip를 사용하려면 html의 body사이에 스크립트 선언을 해주어야한다.
+javascrip를 사용하려면 스크립트 선언을 해주어야한다.
 
 ```html
     <body>
