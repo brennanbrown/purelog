@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Purelog: for Writers"
+title: "This is changlee"
 email: mail@brennanbrown.ca
 description: >- # this means to ignore newlines until "baseurl:"
   A responsive sidebar Jekyll theme using the Pure.css framework, 
