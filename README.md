@@ -24,12 +24,12 @@
 <!-- BADGES -->
 <p align="center">
 <a href="https://app.netlify.com/sites/purelog/deploys"><img src="https://api.netlify.com/api/v1/badges/062e333f-9e9d-440d-9b40-16d11959793d/deploy-status" alt="Netlify Status"></a>
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/brennanbrown/purelog"> 
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brennanbrown/purelog"> 
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/brennanbrown/purelog">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brennanbrown/purelog">
 <a href="https://github.com/brennanbrown/purelog/search?l=html"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennanbrown/purelog"></a>
-<a href="https://github.com/brennanbrown/purelog/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brennanbrown/purelog"></a> 
+<a href="https://github.com/brennanbrown/purelog/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brennanbrown/purelog"></a>
 <a href="https://github.com/brennanbrown/purelog/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brennanbrown/purelog"></a>
-<a href="https://github.com/brennanbrown/purelog/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brennanbrown/purelog"></a> 
+<a href="https://github.com/brennanbrown/purelog/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brennanbrown/purelog"></a>
 <a href="https://purelog.netlify.app"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=Offline%21&label=Status&up_color=darkgreen&up_message=Online%21&url=https%3A%2F%2Fpurelog.netlify.app"></a>
 <br />
 <a href="https://github.com/brennanbrown?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/brennanbrown?label=Follow%20Me%21&style=social"></a>
@@ -163,19 +163,19 @@ See `LICENSE` for more information.
 
 While creating this theme, I came across a lot of helpful and hard-to-find resources. If you'd like to dive deeper into Jekyll, check them out:
 
-- Jumping Into Jekyll: https://dev.to/brennan/jumping-into-jekyll-4o9h
-- Jekyll Cheatsheet: https://devhints.io/jekyll
-- Course on Jekyll: https://learn-the-web.algonquindesign.ca/topics/jekyll/
-- Jekyll for Designers: http://simpleprimate.com/jekyll-for-designers/index.html
-- Dynamic Copyright on Jekyll: https://michaelsoolee.com/jekyll-copyright/
-- Creating breadcrumbs in Jekyll: https://jekyllcodex.org/without-plugin/breadcrumbs/
-- Display all items from ALL collections: https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll
+- Jumping Into Jekyll: <https://dev.to/brennan/jumping-into-jekyll-4o9h>
+- Jekyll Cheatsheet: <https://devhints.io/jekyll>
+- Course on Jekyll: <https://learn-the-web.algonquindesign.ca/topics/jekyll/>
+- Jekyll for Designers: <http://simpleprimate.com/jekyll-for-designers/index.html>
+- Dynamic Copyright on Jekyll: <https://michaelsoolee.com/jekyll-copyright/>
+- Creating breadcrumbs in Jekyll: <https://jekyllcodex.org/without-plugin/breadcrumbs/>
+- Display all items from ALL collections: <https://stackoverflow.com/questions/31171041/listing-all-collections-in-jekyll>
 
 ### Other Resources
 
-- For markdown previews: https://jaspervdj.be/lorem-markdownum/
-- Case Study on webfont performance: https://www.keycdn.com/blog/web-font-performance
-- An extensive `.gitignore`: https://miguelmota.com/bytes/extensive-gitignore/
+- For markdown previews: <https://jaspervdj.be/lorem-markdownum/>
+- Case Study on webfont performance: <https://www.keycdn.com/blog/web-font-performance>
+- An extensive `.gitignore`: <https://miguelmota.com/bytes/extensive-gitignore/>
 
 ## Credit
 
