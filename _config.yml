@@ -37,13 +37,12 @@ disqus: purelog-jekyll
 
 author: Brennan K. Brown
 author_bio: >-
-  Hey there! 😄 My name is Brennan, I'm a 24-year-old Métis web developer and 
+  Hey there! 😄 My name is Brennan, I'm a 25-year-old Métis web developer and 
   content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
   Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, 
   and I'm looking to help those that need web development work done, or 
   searching for ideas and management for their next content project.
 author_pic: https://brennanbrown.ca/img/avatar.png
-
 paginate: 4
 paginate_path: "/:num/"
 

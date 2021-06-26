@@ -21,7 +21,7 @@ content-type: eg
     {% for category in site.categories %}
         <div class="pure-u-1 tags">
         <h2 id="{{ category | first }}">{{ category | first  }}</h2>
-        {% for post in category.last %} 
+        {% for post in category.last %}
             <li id="category-content" style="padding-bottom: 0.6em;"><a href="{{post.url}}">{{ post.title }}</a></li>
         {% endfor %}
         </div>
