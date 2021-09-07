@@ -10,14 +10,6 @@
         {{ mdate | date: date_format }}
     </time>
     {%- endif -%}
-    &#8239;
-    {%- if page.author -%}
-    {% for author in page.author %}
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">By: {{ author }}</span></span>
-    {%- if forloop.last == false %}, {% endif -%}
-    {% endfor %}
-    {%- endif -%}
     &#8239;|&#8239;
     {%- for tag in page.tags -%}
     <a href="/tags/#{{ tag }}">#{{ tag }}</a> &#8239;

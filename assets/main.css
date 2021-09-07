@@ -83,7 +83,6 @@ th {
 
 footer {
   text-align: center;
-  font-size: 26px;
 }
 
 footer span {
@@ -91,6 +90,19 @@ footer span {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+footer .copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+
+footer .pure-menu {
+    font-size: 26px;
 }
 
 footer .pure-menu-link {
@@ -228,6 +240,10 @@ footer .pure-menu-link:hover {
 
 .post-body blockquote p {
   font-size: 22px;
+}
+
+.comments-section {
+  padding-top: 1em;
 }
 
 .post-title {

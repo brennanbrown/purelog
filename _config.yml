@@ -14,10 +14,14 @@ google_analytics:
 comments: false
 disqus:
 
-author: Author
+author: Brennan K. Brown
 author_bio: >-
-  Author Bio
-author_pic:
+  Hey there! 😄 My name is Brennan, I'm a 25-year-old Métis web developer and
+  content strategist from Winnipeg, Manitoba and currently reside in Calgary,
+  Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU,
+  and I'm looking to help those that need web development work done, or
+  searching for ideas and management for their next content project.
+author_pic: https://brennanbrown.ca/img/avatar.png
 
 paginate: 5
 paginate_path: "/:num/"
