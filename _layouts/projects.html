@@ -3,27 +3,28 @@ layout: default
 ---
 {{ content }}
 
-{% assign notes = site.notes %}
+{% assign projects = site.projects %}
 
 <div class="notes">
-    <h2 class="content-subhead">Recent Notes</h2>
+    <h2 class="content-subhead">TODO: Projects (formatted differently)</h2>
 
-    {%- if notes.size > 0 -%}
+    {%- if projects.size > 0 -%}
+
         {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
-        {%- for note in notes -%}
+        {%- for project in projects -%}
             <section class="post">
                 <header class="note-header">
                     <h2 class="post-title">
-                        <a href="{{ note.url | relative_url }}">
-                            {{ note.title | escape }}
+                        <a href="{{ project.url | relative_url }}">
+                            {{ project.title | escape }}
                         </a>
                     </h2>
 
                     <p class="post-meta">
                         Tagged:
                         <span>
-                            {% for tag in note.tags %}
+                            {% for tag in project.tags %}
                                 <a href="/tags/#{{ tag }}">#{{ tag }}</a>
                             {% endfor %}
                         </span>
@@ -32,7 +33,7 @@ layout: default
 
                 <div class="post-description">
                     <p>
-                        <em>{{ note.content | strip_html | escape | truncate: 300}}</em>
+                        <em>{{ project.content | strip_html | escape | truncate: 300}}</em>
                     </p>
                 </div>
             </section>

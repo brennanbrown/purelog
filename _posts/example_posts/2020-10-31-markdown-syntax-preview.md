@@ -7,7 +7,7 @@ tags:
   - Markdown
 author: Eric F.
 avatar: assets/img/common/ericf-avatar.png
-category: Example Posts
+category: Project Updates
 ---
 
 ## Philosophy:

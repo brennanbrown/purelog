@@ -1,10 +1,15 @@
 <aside class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
+
     <div class="sidebar-info">
         <a href="/">
             <span hidden>{{site.title}}
                 Header Image</span>
             <img class="brand-photo" src="{{{site.url}}/{{site.header_image}}" alt="Photo of {{site.author}}"/>
         </a>
+
         <h1 class="brand-title">
             <a href="/">{{site.title}}</a>
         </h1>
@@ -12,14 +17,17 @@
 
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="pure-button" href="{{site.url}}">Home</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="pure-button" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="pure-button" href="{{site.url}}/notes">Notes</a>
+                    <a class="pure-button" href="/">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="pure-button" href="{{site.url}}/journals">Journal</a>
+                    <a class="pure-button" href="/projects">Projects</a>
                 </li>
             </ul>
         </nav>

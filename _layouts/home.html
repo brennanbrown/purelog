@@ -3,10 +3,16 @@ layout: default
 ---
 {{ content }}
 
+{%- include links.html -%}
+
 {% if site.paginate %}
     {% assign posts = paginator.posts %}
 {% else %}
     {% assign posts = site.posts %}
+{% endif %}
+
+{% if paginator.page == 1 %}
+TODO: welcome on first page
 {% endif %}
 
 <div class="posts">

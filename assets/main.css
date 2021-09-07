@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:wght@400;700;800&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700;800&display=swap');
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -152,17 +154,24 @@ footer .pure-menu-link:hover {
 
 .brand-title {
   padding-top: 15px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .brand-title a {
   color: white;
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 1.25em;
 }
 
 .brand-tagline {
   font-weight: 300;
   color: #ddd;
-  font-size: 18px;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  font-style: italic;
 }
 
 .nav-list {
@@ -240,10 +249,6 @@ footer .pure-menu-link:hover {
 
 .post-body blockquote p {
   font-size: 22px;
-}
-
-.comments-section {
-  padding-top: 1em;
 }
 
 .post-title {
@@ -417,11 +422,13 @@ footer .pure-menu-link:hover {
 /* JEKYLL CSS */
 
 .jekyll-header {
+  font-family: 'Pacifico', cursive;
   text-align: center;
   text-decoration: underline;
-  font-size: 48px;
+  font-size: 1.4em;
   margin-bottom: 0px;
   color: #222;
+  font-weight: normal;
 }
 
 .jekyll-header:hover {
@@ -470,7 +477,7 @@ footer ul {
   margin-top: 10px;
 }
 
-.donate a {
+.rss a {
   border-right: 0;
 }
 
@@ -484,8 +491,7 @@ footer ul {
 .categories,
 .archive,
 .rss,
-.projects,
-.donate {
+.projects {
   display: inline-block;
 }
 
@@ -507,10 +513,6 @@ footer ul {
 
 .rss i {
   color: #cfa531;
-}
-
-.donate i {
-  color: #da6064;
 }
 
 /* SEARCH */

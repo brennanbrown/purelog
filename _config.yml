@@ -1,14 +1,14 @@
-title: "Placeholder Title"
+title: "Solitary Ewe"
 email: email@address.com
 description: >- # this means to ignore newlines until "baseurl:"
- Placeholder blog description.
+ Follow me on my journey from novice lamb to remote software developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://solitaryewe.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: solitaryewe/solitaryewe.github.io
-twitter: placeholder
+twitter:
 github: solitaryewe
 
-header_image: assets/profile.png
+header_image: assets/lamb-silhouette-1.png
 
 google_analytics:
 comments: false
@@ -50,16 +50,10 @@ defaults:
       avatar: assets/profile-sm.png
   - scope:
       path: ""
-      type: notes
+      type: "projects"
     values:
-      layout: post
-      content-type: notes
-  - scope:
-      path: ""
-      type: journals
-    values:
-      layout: journal-entry
-      content-type: journals
+      layout: "project"
+      content-type: "projects"
 
 # Allows all pages to be put into `_pages` folder
 # for easier navigation and better SEO.
@@ -67,12 +61,9 @@ collections:
   pages:
     output: true
     permalink: /:title
-  notes:
+  projects:
     output: true
-    permalink: /notes/:title
-  journals:
-    output: true
-    permalink: /journals/:title
+    permalink: /projects/:title
 
 # Exclude from processing.
 exclude:

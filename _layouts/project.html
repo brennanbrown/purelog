@@ -6,18 +6,31 @@ layout: default
 
     <header class="post-header">
         <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
-        {%- include journal-data.html -%}
+        {%- include post-data.html -%}
     </header>
 
     <div articlebody" class="post-body itemprop=">
         {{ content }}
     </div>
 
-    {%- include author.html -%}
+
+
+    <!-- {%- include author.html -%} -->
 
     {%- if site.disqus.shortname -%}
         {%- include disqus_comments.html -%}
     {%- endif -%}
+
+<hr>
+
+    <script src="https://utteranc.es/client.js"
+        repo="solitaryewe/solitaryewe.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
