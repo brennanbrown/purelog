@@ -29,6 +29,7 @@
 <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/brennanbrown/purelog">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brennanbrown/purelog">
 <a href="https://github.com/brennanbrown/purelog/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/brennanbrown/purelog"></a>
+<a href="https://rubygems.org/gems/purelog"><img alt="RubyGems" src="https://badge.fury.io/rb/purelog.svg"></a>
 <a href="https://github.com/brennanbrown/purelog/search?l=html"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennanbrown/purelog"></a>
 <a href="https://github.com/brennanbrown/purelog/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brennanbrown/purelog"></a>
 <a href="https://github.com/brennanbrown/purelog/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brennanbrown/purelog"></a>
@@ -41,6 +42,40 @@
 <a href="https://github.com/brennanbrown/purelog/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brennanbrown/purelog?label=Star%21&style=social"> </a>
 <a href="https://github.com/brennanbrown/purelog/network/members"><img alt="GitHub forks"src="https://img.shields.io/github/forks/brennanbrown/purelog?label=Fork%21&style=social"></a>
 </p>
+
+<!-- QUICK START: THEME GEM -->
+
+## Quick start — use Purelog as a theme gem
+
+The Purelog theme is published on RubyGems and can be used in any Jekyll site.
+
+1) Add to your Gemfile:
+
+```ruby
+gem "purelog", "~> 0.1.0"
+```
+
+2) In your `_config.yml`:
+
+```yaml
+theme: purelog
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+```
+
+3) Install and run:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+See also:
+- Changelog: [`docs/CHANGELOG.md`](docs/CHANGELOG.md)
+- Theme gem guide/playbook: [`docs/THEME_GEM_GUIDE.md`](docs/THEME_GEM_GUIDE.md)
 
 <!-- ABOUT THE PROJECT -->
 
