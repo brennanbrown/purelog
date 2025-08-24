@@ -1,30 +1,30 @@
-<div class="menu">
+<div class="menu" aria-label="Secondary">
     <div class="about">
-        <a href="/about">
+        <a href="{{ "/about" | relative_url }}">
             <i class="fas fa-signature"></i>
             About
         </a>
     </div>
     <div class="hashtags">
-        <a href="/tags">
+        <a href="{{ "/tags" | relative_url }}">
             <i class="fas fa-hashtag"></i>
             Tags
         </a>
     </div>
     <div class="categories">
-        <a href="/categories">
+        <a href="{{ "/categories" | relative_url }}">
             <i class="far fa-folder-open"></i>
             Categories
         </a>
     </div>
     <div class="archive">
-        <a href="/archive">
+        <a href="{{ "/archive" | relative_url }}">
             <i class="fas fa-archive"></i>
             Archive
         </a>
     </div>
     <div class="rss">
-        <a href="/feed.xml">
+        <a href="{{ "/feed.xml" | relative_url }}">
             <i class="fas fa-rss"></i>
             RSS
         </a>

@@ -3,7 +3,7 @@ layout: default
 ---
 {{ content }}
 
-{% if site.paginate %}
+{% if paginator %}
     {% assign posts = paginator.posts %}
 {% else %}
     {% assign posts = site.posts %}
@@ -18,7 +18,7 @@ layout: default
         {%- for post in posts -%}
             <section class="post">
                 <header class="feed-header">
-                    <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar" src="{{site.url}}/{{post.avatar}}"/>
+                    <img width="48" height="48" alt="{{post.author}}'s Avatar'" class="post-avatar" src="{{ post.avatar | relative_url }}"/>
                     <h2 class="post-title">
                         <a href="{{ post.url | relative_url }}">
                             {{ post.title | escape }}
@@ -34,7 +34,7 @@ layout: default
                         under
                         <span>
                             {% for tag in post.tags %}
-                                <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+                                <a href="{{ "/tags/#" | append: tag | relative_url }}">#{{ tag }}</a>
                             {% endfor %}
                         </span>
                     </p>
@@ -55,7 +55,7 @@ layout: default
 
     <br/>
 
-    {% if site.paginate %}
+    {% if paginator %}
         <div class="pure-menu pure-menu-horizontal paginate">
             <ul>
 

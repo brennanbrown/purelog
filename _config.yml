@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A responsive sidebar Jekyll theme using the Pure.css framework, 
   designed for writers and bloggers of all kinds.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://purelog.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # set per-deploy; Netlify/GitHub Pages will inject the correct URL
 repository: brennanbrown/purelog
 twitter: brennankbrown
 github: brennanbrown
@@ -37,14 +37,12 @@ disqus: purelog-jekyll
 
 author: Brennan K. Brown
 author_bio: >-
-  Hey there! 😄 My name is Brennan, I'm a 25-year-old Métis web developer and 
+  Hey there! 😄 My name is Brennan, I'm a 29-year-old Métis web developer and 
   content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
   Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, 
   and I'm looking to help those that need web development work done, or 
   searching for ideas and management for their next content project.
-author_pic: https://brennanbrown.ca/img/avatar.png
-paginate: 4
-paginate_path: "/:num/"
+author_pic: https://brennanbrown.ca/images/hero/hero-image.jpg
 
 markdown: kramdown
 
@@ -57,8 +55,14 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
+  - jekyll-paginate-v2
 permalink: /:title
+
+# Pagination (jekyll-paginate-v2)
+pagination:
+  enabled: true
+  per_page: 4
+  permalink: "/page/:num/"
 
 defaults:
   - scope:

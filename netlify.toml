@@ -1,0 +1,14 @@
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  RUBY_VERSION = "3.3.0"
+  BUNDLE_WITHOUT = "development:test"
+
+[context.deploy-preview]
+  command = "bundle exec jekyll build --baseurl='${DEPLOY_PRIME_URL}'"
+
+[context.branch-deploy]
+  command = "bundle exec jekyll build"
