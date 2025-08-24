@@ -35,6 +35,7 @@
 <a href="https://github.com/brennanbrown/purelog/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/brennanbrown/purelog"></a>
 <a href="https://purelog.netlify.app"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=Offline%21&label=Status&up_color=darkgreen&up_message=Online%21&url=https%3A%2F%2Fpurelog.netlify.app"></a>
 <br />
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/brennanbrown/purelog"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 <a href="https://github.com/brennanbrown?tab=followers"><img alt="GitHub followers" src="https://img.shields.io/github/followers/brennanbrown?label=Follow%20Me%21&style=social"></a>
 <a href="https://github.com/brennanbrown/purelog/watchers"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/brennanbrown/purelog?label=Watch%21&style=social"></a>
 <a href="https://github.com/brennanbrown/purelog/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brennanbrown/purelog?label=Star%21&style=social"> </a>
@@ -141,18 +142,19 @@ This theme supports Google Analytics 4 (GA4):
 - Changelog: [`docs/CHANGELOG.md`](docs/CHANGELOG.md)
 - Configuration: [`_config.yml`](_config.yml) and `_BLANK_config.yml`
 - Layouts and includes: [`_layouts/`](_layouts/) and [`_includes/`](_includes/)
+- Collections: [`docs/COLLECTIONS.md`](docs/COLLECTIONS.md)
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-There are several features that I'm still planning to create and integrate, including:
+There are several features that I'm still planning to create and integrate. Completed items are checked:
 
-- Create a [Theme Gem](https://jekyllrb.com/docs/themes/#publishing-your-theme)
-- Add easy and automatic buttons to ["Deploy to Netlify"](https://docs.netlify.com/site-deploys/create-deploys/#deploy-to-netlify-button), Heroku, etc.
-- Add Travis continious integration checks
-- Add additional documentation for creating custom collections and auto generated pages
-- Add more example posts and articles
+- [ ] Create a [Theme Gem](https://jekyllrb.com/docs/themes/#publishing-your-theme)
+- [x] Add easy and automatic button to [Deploy to Netlify](https://docs.netlify.com/site-deploys/create-deploys/#deploy-to-netlify-button)
+- [x] Add continuous integration (GitHub Actions) for build checks
+- [x] Add documentation for creating custom collections and auto-generated pages
+- [ ] Add more example posts and articles
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
