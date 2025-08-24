@@ -1,0 +1,4 @@
+/* Purelog theme CSS entrypoint (non-Sass). */
+/* Sites can override by shadowing this file in their project. */
+@import url("../main.css");
+@import url("../code.css");
