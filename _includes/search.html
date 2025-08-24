@@ -1,4 +1,4 @@
-<div id="search">
+<div id="search" role="search">
     <label>
         <span class="search-icon">🔎</span>
         <input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)" placeholder="Search all articles..." type="text"/>
@@ -6,7 +6,7 @@
 
     <ul id="results-container" style="display: none"></ul>
 </div>
-<script src="/assets/simple-jekyll-search.js"></script>
+<script src="{{ "/assets/simple-jekyll-search.js" | relative_url }}"></script>
 <script>
     function changeResultContainerDisp(val) {
         if (val) {
@@ -35,8 +35,8 @@
     var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById("search-input"),
         resultsContainer: document.getElementById("results-container"),
-        json: "/search.json",
-        searchResultTemplate: "<li class='search_res' style='list-style: none;'><a href='{{ site.url }}{url}' color: #555555;'><p><strong>></strong> {title}</p></a></li>",
+        json: "{{ '/search.json' | relative_url }}",
+        searchResultTemplate: "<li class='search_res' style='list-style: none;'><a href='{url}' style='color:#555555;'><p><strong>></strong> {title}</p></a></li>",
         noResultsText: "No results found. Try another search.",
         fuzzy: false,
         limit: 5

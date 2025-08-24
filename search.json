@@ -7,7 +7,7 @@ layout: null
     {
 
       "title"    : "{{ post.title | strip_html | escape }}",
-      "url"      : "{{ post.url }}",
+      "url"      : "{{ post.url | relative_url }}",
       "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}
 
     },
@@ -17,7 +17,7 @@ layout: null
     {
 
       "title"    : "{{ post.title | strip_html | escape }}",
-      "url"      : "{{ post.url }}",
+      "url"      : "{{ post.url | relative_url }}",
       "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}
 
     },
@@ -27,7 +27,7 @@ layout: null
     {
 
       "title"    : "{{ post.title | strip_html | escape }}",
-      "url"      : "{{ post.url }}",
+      "url"      : "{{ post.url | relative_url }}",
       "content"  : {{ post.content | newline_to_br | strip_newlines | replace: '<br/>', '' | strip | strip_html | strip | jsonify }}
 
     }{% unless forloop.last %},{% endunless %}

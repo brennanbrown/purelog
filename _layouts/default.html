@@ -12,16 +12,16 @@
         <div class="content pure-u-1 pure-u-md-3-4">
             <div class="md-display">
                 <h1>
-                    <a class="jekyll-header" href="/">Welcome to {{site.title}}</a>
+                    <a class="jekyll-header" href="{{ "/" | relative_url }}">Welcome to {{site.title}}</a>
                 </h1>
                 {%- include links.html -%}
                 {%- include search.html -%}
             </div>
-            <div>
+            <main id="main-content" role="main">
                 {{ content }}
-                {%-include footer.html -%}
+                {%- include footer.html -%}
 
-            </div>
+            </main>
         </div>
     </div>
 

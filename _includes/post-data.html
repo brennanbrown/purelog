@@ -20,6 +20,6 @@
     {%- endif -%}
     &#8239;|&#8239;
     {%- for tag in page.tags -%}
-    <a href="/tags/#{{ tag }}">#{{ tag }}</a> &#8239;
+    <a href="{{ "/tags/#" | append: tag | relative_url }}">#{{ tag }}</a> &#8239;
     {%- endfor -%}
 </p>

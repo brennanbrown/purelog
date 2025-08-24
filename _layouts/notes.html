@@ -24,7 +24,7 @@ layout: default
                         Tagged:
                         <span>
                             {% for tag in note.tags %}
-                                <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+                                <a href="{{ "/tags/#" | append: tag | relative_url }}">#{{ tag }}</a>
                             {% endfor %}
                         </span>
                     </p>
