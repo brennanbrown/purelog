@@ -143,6 +143,8 @@ This theme supports Google Analytics 4 (GA4):
 - Configuration: [`_config.yml`](_config.yml) and `_BLANK_config.yml`
 - Layouts and includes: [`_layouts/`](_layouts/) and [`_includes/`](_includes/)
 - Collections: [`docs/COLLECTIONS.md`](docs/COLLECTIONS.md)
+- Deploying: [`docs/DEPLOYING.md`](docs/DEPLOYING.md)
+- Using as a theme (preview): [`docs/THEME.md`](docs/THEME.md)
 
 <!-- ROADMAP -->
 

@@ -56,6 +56,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate-v2
+  - jekyll-sitemap
 permalink: /:title
 
 # Pagination (jekyll-paginate-v2)
@@ -103,3 +104,5 @@ exclude:
   - ".jekyll-cache"
   - "Gemfile"
   - "Gemfile.lock"
+  - "theme"
+  - "sandbox"
