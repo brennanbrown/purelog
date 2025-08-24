@@ -5,6 +5,42 @@ All notable changes to this project will be documented in this file.
 This project adheres to Keep a Changelog principles (lightweight) and uses semver-like tags when applicable.
 
 ## [Unreleased]
+### Added
+- CI workflow for build checks at `.github/workflows/ci.yml`.
+- Documentation: `docs/COLLECTIONS.md`, `docs/DEPLOYING.md`, and `docs/THEME.md`.
+- Deploy to Netlify button in `README.md`.
+- `jekyll-sitemap` plugin added to `Gemfile` and `_config.yml`.
+- Theme gem preview scaffold under `theme/` (excluded from build).
+- Theme gem conversion guide at `docs/THEME_GEM_GUIDE.md`.
+- Sandbox sample posts to exercise pagination in `sandbox/_posts/`.
+
+### Changed
+- `robots.txt` sitemap now falls back to a relative URL when `site.url` is not set.
+- Theme gemspec now pins Jekyll to `~> 4.3` (`theme/purelog.gemspec`).
+- Introduced CSS entrypoint `theme/assets/css/purelog.css`; deprecated SCSS entrypoint by removing front matter/imports from `theme/assets/css/purelog.scss` to avoid build conflicts and linter noise.
+- Enabled pagination on sandbox home via front matter in `sandbox/index.md`.
+
+## [purelog-theme 0.1.0] - 2025-08-24
+Initial pre-release of the standalone Purelog Jekyll theme gem.
+
+### Added
+- Theme structure under `theme/` with reusable components:
+  - Layouts in `theme/_layouts/` and includes in `theme/_includes/` using `relative_url`.
+  - Assets in `theme/assets/` (`main.css`, `code.css`, `simple-jekyll-search.js`).
+  - SCSS entrypoint at `theme/assets/css/purelog.scss`.
+- Ruby entrypoint and versioning:
+  - `theme/lib/purelog.rb`
+  - `theme/lib/purelog/version.rb` set to `0.1.0`
+- Gemspec and metadata at `theme/purelog.gemspec` including files packaging.
+- Theme docs and license copied into `theme/README.md` and `theme/LICENSE`.
+- Local sandbox site in `sandbox/` to test the theme via local path gem.
+
+### Changed
+- Normalized internal links to use `relative_url` across layouts/includes for baseurl portability.
+
+### Build
+- Verified gem builds locally: `purelog-0.1.0.gem`.
+- Verified sandbox builds and serves locally with the theme applied.
 
 ## [1.1.0] - 2025-08-24
 ### Added
@@ -40,4 +76,5 @@ This project adheres to Keep a Changelog principles (lightweight) and uses semve
 ---
 
 [Unreleased]: https://github.com/brennanbrown/purelog/compare/v1.1.0...HEAD
+[purelog-theme 0.1.0]: https://github.com/brennanbrown/purelog/releases/tag/purelog-theme-0.1.0
 [1.1.0]: https://github.com/brennanbrown/purelog/releases/tag/v1.1.0
