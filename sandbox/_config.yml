@@ -1,0 +1,32 @@
+title: Purelog Sandbox
+email: example@example.com
+description: Local test site for the Purelog theme gem.
+baseurl: ""
+url: ""
+
+# Use the theme gem
+theme: purelog
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+
+# Optional collections
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title
+  journals:
+    output: true
+    permalink: /journals/:title
+
+# jekyll-paginate-v2 configuration (replaces legacy `paginate`)
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page/:num/"
+  title: ":title - page :num"
+  sort_field: "date"
+  sort_reverse: true
