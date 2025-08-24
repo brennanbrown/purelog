@@ -7,20 +7,24 @@
 
     <meta name="application-name" content="{{ site.title }}">
     <meta name="theme-color" content="{{ site.theme_color }}">
-    <link rel="archives" href="{{site.url}}/archives/">
+    <link rel="archives" href="{{ "/archive" | relative_url }}">
 
     <meta name="robots" content="index,follow"> <!-- All Search Engines -->
     <meta name="googlebot" content="index,follow"><!-- Google Specific    -->
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="/assets/main.css">
-    <link rel="stylesheet" href="/assets/code.css">
+    <!-- Performance hints for external fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.3/pure-min.css" integrity="sha512-FEioxlObRXIskNAQ1/L0byx0SEkfAY+5fO024p9kGEfUQnACGRfCG5Af4bp/7sPNSzKbMtvmcJOWZC7fPX1/FA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.3/grids-responsive-min.css" integrity="sha512-kAun73Sep6+UULykSwzQpmYKvyuU12oHjnHvm6khVmK8uFSiWp1gR9KHQbte5GNyTfJ88069HImsSP0gtgMfIg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/code.css" | relative_url }}">
     <script src="https://kit.fontawesome.com/e9dddf84a6.js" crossorigin="anonymous"></script>
+    {% if jekyll.environment == "production" and site.google_analytics %}
+      {%- include analytics.html -%}
+    {% endif %}
     {%- seo -%}
     {%- feed_meta -%}
-    {%- if site.google_analytics -%}
-        {%- google_analytics -%}
-    {%- endif -%}
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+    <link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | relative_url }}">
 </head>

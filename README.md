@@ -18,6 +18,8 @@
     <a href="https://github.com/brennanbrown/purelog/issues">Report Bug</a>
     ·
     <a href="https://github.com/brennanbrown/purelog/issues">Request Feature</a>
+    ·
+    <a href="docs/CHANGELOG.md">Changelog</a>
   </p>
 </p>
 
@@ -26,6 +28,7 @@
 <a href="https://app.netlify.com/sites/purelog/deploys"><img src="https://api.netlify.com/api/v1/badges/062e333f-9e9d-440d-9b40-16d11959793d/deploy-status" alt="Netlify Status"></a>
 <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/brennanbrown/purelog">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brennanbrown/purelog">
+<a href="https://github.com/brennanbrown/purelog/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/brennanbrown/purelog"></a>
 <a href="https://github.com/brennanbrown/purelog/search?l=html"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennanbrown/purelog"></a>
 <a href="https://github.com/brennanbrown/purelog/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/brennanbrown/purelog"></a>
 <a href="https://github.com/brennanbrown/purelog/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brennanbrown/purelog"></a>
@@ -60,7 +63,7 @@ Here are a few interesting features of this Jekyll theme:
 - An auto-generating archive page that displays all entries from _all_ collections.
 - Auto-generating tags and categories pages.
 - Having a `_pages` collection for easier organization.
-- An author bio at the end of each post. (Located in `_inclues/author.html`)
+- An author bio at the end of each post. (Located in `_includes/author.html`)
 - Full Rouge support for syntax highlighting. (Currently using `base16.solarized.light`)
 - Auto-generated RSS feed, sitemap, accessibility features, and search-engine optimization.
 
@@ -124,6 +127,20 @@ Once you have Jekyll up-and-running, there are only a few steps needed to make t
 3. Modify or remove the pages in `_pages` to however you see fit.
 4. _(Optional)_ Modify or remove this `README.md` with information about your own project or blog.
 5. _(Optional)_ Modify the CSS files in the `assets` folder to customize the site.
+
+### Analytics (optional)
+
+This theme supports Google Analytics 4 (GA4):
+
+- Set `google_analytics: G-XXXXXXXXXX` in `_config.yml` (or only in production via a separate config).
+- The snippet only loads in production builds.
+
+## Documentation
+
+- Project overview: this `README.md`
+- Changelog: [`docs/CHANGELOG.md`](docs/CHANGELOG.md)
+- Configuration: [`_config.yml`](_config.yml) and `_BLANK_config.yml`
+- Layouts and includes: [`_layouts/`](_layouts/) and [`_includes/`](_includes/)
 
 <!-- ROADMAP -->
 
