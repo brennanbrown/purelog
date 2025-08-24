@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="post-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+        {%- include journal-data.html -%}
+    </header>
+
+    <div articlebody" class="post-body itemprop=">
+        {{ content }}
+    </div>
+
+    {%- include author.html -%}
+
+    {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

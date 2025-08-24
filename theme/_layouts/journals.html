@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign journals = site.journals %}
+
+<div class="journals">
+    <h2 class="content-subhead">Recent Journals</h2>
+
+    {%- if journals.size > 0 -%}
+        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+
+        {%- for journal in journals -%}
+            <section class="journal">
+                <header class="journal-header">
+                    <small>
+                        <h2 class="post-title">
+                            <a href="{{ journal.url | relative_url }}">
+                                {{ journal.title | escape }}
+                            </a>
+                        </h2>
+                    </small>
+                </header>
+
+                <div class="journal-description">
+                    <p>
+                        <em>{{ journal.content | escape | truncate: 300}}</em>
+                    </p>
+                </div>
+            </section>
+        {%- endfor -%}
+    </div>
+
+
+    <br/>
+
+{%- endif -%}

@@ -1,0 +1,18 @@
+{%- comment -%}
+Google Analytics (GA4) snippet.
+Usage:
+  1) Set `google_analytics: G-XXXXXXXXXX` in `_config.yml` (or via environment-specific config)
+  2) Ensure builds set JEKYLL_ENV=production to activate the include in `head.html`
+{%- endcomment -%}
+{%- if site.google_analytics and site.google_analytics != '' -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}', {
+    'anonymize_ip': true,
+    'page_path': window.location.pathname
+  });
+</script>
+{%- endif -%}
